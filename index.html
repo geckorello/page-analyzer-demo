@@ -2,27 +2,27 @@
 <html lang="de-AT">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google Ads Agentur Wien | 17+ Jahre Erfahrung | Matthias Wieser</title>
-  <meta name="description" content="Google Ads Agentur in Wien mit 17+ Jahren Erfahrung und über 1.000 optimierten Kampagnen. Mehr Conversions bei weniger Kosten. Jetzt kostenlose Potenzialanalyse anfordern!">
+  <meta name="description" content="Google Ads Agentur Wien mit 17+ Jahren Erfahrung und 1.000+ optimierten Kampagnen. Mehr Conversions, weniger Kosten. Jetzt kostenlose Potenzialanalyse!">
   <link rel="canonical" href="https://matthias-wieser.com/google-ads-agentur-wien/">
+  <meta name="content-language" content="de-AT">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta http-equiv="content-language" content="de-AT">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Google Ads Agentur Wien - Matthias Wieser | 17+ Jahre Expertise">
-  <meta property="og:description" content="Professionelle Google Ads Betreuung in Wien. Mehr Conversions, weniger Kosten durch 17+ Jahre Kampagnen-Erfahrung. Kostenlose Erstanalyse verfügbar.">
+  <meta property="og:description" content="Professionelle Google Ads Betreuung in Wien. Mehr Conversions, weniger Kosten durch 17+ Jahre Kampagnen-Erfahrung. Kostenlose Erstanalyse verfuegbar.">
   <meta property="og:image" content="assets/images/MW_Portrait.jpg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Matthias Wieser - Google Ads Agentur Wien">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_AT">
   <meta property="og:site_name" content="Wieser Digital Marketing">
   <meta property="og:url" content="https://matthias-wieser.com/google-ads-agentur-wien/">
 
-  <!-- Hreflang -->
-  <link rel="alternate" hreflang="de-AT" href="https://matthias-wieser.com/google-ads-agentur-wien/">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Google Ads Agentur Wien | 17+ Jahre Erfahrung | Matthias Wieser">
+  <meta name="twitter:description" content="Professionelle Google Ads Betreuung in Wien. Mehr Conversions, weniger Kosten durch 17+ Jahre Kampagnen-Erfahrung.">
+  <meta name="twitter:image" content="assets/images/MW_Portrait.jpg">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,43 +30,36 @@
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
-    /* ========================================
-       CSS Reset
-       ======================================== */
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
-    body { font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #2B2B2B; background: #FFFFFF; line-height: 1.6; font-size: 1.125rem; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-    img { max-width: 100%; height: auto; display: block; }
-    a { color: inherit; text-decoration: none; }
-    ul, ol { list-style: none; }
-    button, input, textarea, select { font-family: inherit; font-size: inherit; }
+    /* ===== CSS Reset ===== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    /* ========================================
-       Design Tokens
-       ======================================== */
+    /* ===== Design Tokens ===== */
     :root {
       --color-primary: #007279;
+      --color-primary-dark: #005a5f;
       --color-secondary: #FFCA01;
-      --color-accent: #005a5f;
+      --color-secondary-hover: #e6b600;
       --color-bg: #FFFFFF;
       --color-surface: #F6F6F6;
       --color-text: #2B2B2B;
       --color-text-secondary: #4D4D4D;
       --color-border: #E0E0E0;
       --color-cta-text: #004d52;
-      --color-success: #00a86b;
-      --color-error: #e74c3c;
 
-      --font-heading: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      --font-body: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-
-      --h1-size: clamp(2.5rem, 5vw, 3.5rem);
-      --h2-size: clamp(1.75rem, 3.5vw, 2.25rem);
-      --h3-size: clamp(1.25rem, 2.5vw, 1.5rem);
-      --body-size: 1.125rem;
-      --small-size: 0.875rem;
+      --font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-size-h1: clamp(2.5rem, 5vw, 3.5rem);
+      --font-size-h2: clamp(1.75rem, 3.5vw, 2.25rem);
+      --font-size-h3: clamp(1.25rem, 2.5vw, 1.5rem);
+      --font-size-body: 1.125rem;
+      --font-size-small: 0.875rem;
+      --line-height-body: 1.6;
 
       --section-padding: 80px 0;
+      --section-padding-compact: 60px 0;
       --container-width: 1100px;
       --container-padding: 24px;
       --gap: 24px;
@@ -77,1128 +70,1316 @@
       --radius-lg: 16px;
       --radius-round: 50%;
 
-      --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
-      --shadow-card-hover: 0 4px 20px rgba(0, 0, 0, 0.1);
-      --shadow-cta: 0 4px 14px rgba(0, 114, 121, 0.3);
-      --shadow-form: 0 8px 30px rgba(0, 0, 0, 0.15);
+      --shadow-card: 0 2px 8px rgba(0,0,0,0.08);
+      --shadow-card-hover: 0 4px 16px rgba(0,0,0,0.12);
+      --shadow-form: 0 4px 16px rgba(0,0,0,0.15);
     }
 
     @media (max-width: 768px) {
       :root {
         --section-padding: 48px 0;
+        --section-padding-compact: 40px 0;
         --gap: 16px;
         --card-padding: 24px;
       }
     }
 
-    /* ========================================
-       Skip Link
-       ======================================== */
+    /* ===== Base Styles ===== */
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-family);
+      font-size: var(--font-size-body);
+      line-height: var(--line-height-body);
+      color: var(--color-text);
+      background-color: var(--color-bg);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-family);
+      line-height: 1.2;
+    }
+
+    h1 { font-size: var(--font-size-h1); font-weight: 800; }
+    h2 { font-size: var(--font-size-h2); font-weight: 700; line-height: 1.3; }
+    h3 { font-size: var(--font-size-h3); font-weight: 700; line-height: 1.4; }
+
+    /* ===== Skip Link ===== */
     .skip-link {
       position: absolute;
-      top: -100px;
+      top: -100%;
       left: 16px;
-      background: var(--color-primary);
-      color: #fff;
+      background: var(--color-secondary);
+      color: var(--color-cta-text);
       padding: 12px 24px;
       border-radius: var(--radius-md);
-      z-index: 10000;
       font-weight: 700;
+      z-index: 1000;
       transition: top 0.2s;
     }
+
     .skip-link:focus {
       top: 16px;
     }
 
-    /* ========================================
-       Container
-       ======================================== */
+    /* ===== Container ===== */
     .container {
       max-width: var(--container-width);
       margin: 0 auto;
       padding: 0 var(--container-padding);
     }
 
-    /* ========================================
-       Sticky Header
-       ======================================== */
-    .site-header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 1000;
-      height: 70px;
-      background: rgba(255, 255, 255, 0.97);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      transition: box-shadow 0.3s ease;
-      border-bottom: 1px solid transparent;
-    }
-    .site-header.scrolled {
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-      border-bottom-color: rgba(0, 0, 0, 0.04);
-    }
-    .header-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 100%;
-    }
-    .header-logo img {
-      height: 40px;
-      width: auto;
-    }
-    .header-right {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    .header-phone {
-      color: var(--color-primary);
-      font-weight: 600;
-      font-size: 0.9375rem;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      transition: color 0.2s;
-    }
-    .header-phone:hover { color: var(--color-accent); }
-    .header-phone svg { width: 16px; height: 16px; flex-shrink: 0; }
-    .header-cta {
-      display: inline-flex;
-      align-items: center;
-      background: var(--color-secondary);
-      color: var(--color-cta-text);
-      padding: 10px 22px;
-      border-radius: var(--radius-md);
-      font-weight: 700;
-      font-size: 0.9375rem;
-      transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
-      border: none;
-      cursor: pointer;
-    }
-    .header-cta:hover {
-      background: #e6b600;
-      box-shadow: 0 4px 14px rgba(0, 114, 121, 0.25);
-      transform: translateY(-1px);
-    }
-    .header-cta:active { transform: translateY(0); }
-
-    @media (max-width: 768px) {
-      .site-header { height: 60px; }
-      .header-logo img { height: 34px; }
-      .header-phone { display: none; }
-      .header-cta { padding: 8px 16px; font-size: 0.8125rem; }
-    }
-
-    /* ========================================
-       Buttons (Global)
-       ======================================== */
+    /* ===== CTA Buttons ===== */
     .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+      display: inline-block;
       background: var(--color-secondary);
       color: var(--color-cta-text);
-      padding: 16px 32px;
-      border-radius: var(--radius-md);
+      font-size: 18px;
       font-weight: 700;
-      font-size: 1.125rem;
+      padding: 16px 36px;
+      border-radius: var(--radius-md);
       border: none;
       cursor: pointer;
-      transition: background 0.2s, box-shadow 0.25s, transform 0.15s;
-      box-shadow: var(--shadow-cta);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
       text-align: center;
       line-height: 1.3;
     }
-    .btn-primary:hover {
-      background: #e6b600;
-      box-shadow: 0 6px 20px rgba(0, 114, 121, 0.4);
-      transform: translateY(-2px);
-    }
-    .btn-primary:active { transform: translateY(0); }
+
+    .btn-primary:hover,
     .btn-primary:focus-visible {
-      outline: 3px solid var(--color-secondary);
-      outline-offset: 3px;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255,202,1,0.4);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
     }
 
     .btn-secondary {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
       gap: 8px;
       background: transparent;
-      color: #FFFFFF;
-      padding: 14px 30px;
-      border-radius: var(--radius-md);
+      color: #ffffff;
+      font-size: 16px;
       font-weight: 600;
-      font-size: 1rem;
-      border: 2px solid #FFFFFF;
+      padding: 14px 32px;
+      border-radius: var(--radius-md);
+      border: 2px solid #ffffff;
       cursor: pointer;
-      transition: background 0.2s, transform 0.15s;
+      transition: background 0.2s ease;
       text-align: center;
       line-height: 1.3;
     }
-    .btn-secondary:hover {
-      background: rgba(255, 255, 255, 0.12);
-      transform: translateY(-1px);
-    }
+
+    .btn-secondary:hover,
     .btn-secondary:focus-visible {
-      outline: 3px solid #FFFFFF;
-      outline-offset: 3px;
+      background: rgba(255,255,255,0.1);
     }
 
-    .btn-ghost {
-      display: inline-flex;
+    /* ===== Focus Styles ===== */
+    :focus-visible {
+      outline: 3px solid var(--color-secondary);
+      outline-offset: 2px;
+    }
+
+    /* ===== Header / Navigation ===== */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      background: rgba(0, 114, 121, 0.97);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+
+    .site-header.scrolled {
+      box-shadow: 0 2px 20px rgba(0,0,0,0.15);
+    }
+
+    .header-inner {
+      display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 8px;
-      background: transparent;
-      color: var(--color-primary);
-      padding: 14px 30px;
-      border-radius: var(--radius-md);
-      font-weight: 600;
-      font-size: 1rem;
-      border: 2px solid var(--color-primary);
-      cursor: pointer;
-      transition: background 0.2s, color 0.2s, transform 0.15s;
-      text-align: center;
-      line-height: 1.3;
-    }
-    .btn-ghost:hover {
-      background: var(--color-primary);
-      color: #FFFFFF;
-      transform: translateY(-1px);
+      justify-content: space-between;
+      padding: 12px var(--container-padding);
+      max-width: var(--container-width);
+      margin: 0 auto;
     }
 
-    /* ========================================
-       Section Headings
-       ======================================== */
-    .section-heading {
-      font-family: var(--font-heading);
-      font-size: var(--h2-size);
-      font-weight: 700;
-      line-height: 1.2;
-      color: var(--color-text);
-      margin-bottom: 16px;
-    }
-    .section-intro {
-      font-size: var(--body-size);
-      color: var(--color-text-secondary);
-      line-height: 1.6;
-      max-width: 720px;
-    }
-    .section-header {
-      margin-bottom: 48px;
-    }
-    .section-header--center {
-      text-align: center;
-    }
-    .section-header--center .section-intro {
-      margin-left: auto;
-      margin-right: auto;
+    .header-logo img {
+      height: 40px;
+      width: auto;
     }
 
-    /* ========================================
-       HERO
-       ======================================== */
+    .header-cta {
+      font-size: 14px;
+      padding: 10px 24px;
+    }
+
+    /* ===== Hero Section ===== */
     .hero {
-      background: linear-gradient(135deg, #007279 0%, #005a5f 100%);
-      padding: 160px 0 100px;
+      background: var(--color-primary);
+      color: #ffffff;
+      padding: 140px 0 0;
       position: relative;
       overflow: hidden;
     }
+
     .hero::before {
       content: "";
       position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 20% 80%, rgba(255, 202, 1, 0.06) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.04) 0%, transparent 40%);
+      top: -40%;
+      right: -20%;
+      width: 700px;
+      height: 700px;
+      border-radius: 50%;
+      background: rgba(255,202,1,0.04);
       pointer-events: none;
     }
+
     .hero::after {
       content: "";
       position: absolute;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      bottom: -30%;
+      left: -10%;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: rgba(0,90,95,0.3);
       pointer-events: none;
     }
-    .hero-inner {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 48px;
-      align-items: center;
+
+    .hero .container {
       position: relative;
       z-index: 1;
     }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 48px;
+      align-items: center;
+    }
+
     .hero-content {
-      max-width: 700px;
+      padding-bottom: 40px;
     }
+
     .hero h1 {
-      font-family: var(--font-heading);
-      font-size: var(--h1-size);
-      font-weight: 800;
-      line-height: 1.15;
-      color: #FFFFFF;
       margin-bottom: 20px;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.02em;
     }
-    .hero-sub {
-      font-size: 1.125rem;
-      color: rgba(255, 255, 255, 0.9);
-      line-height: 1.65;
-      max-width: 600px;
-      margin-bottom: 36px;
+
+    .hero-subheadline {
+      font-size: var(--font-size-body);
+      line-height: 1.6;
+      color: rgba(255,255,255,0.95);
+      margin-bottom: 24px;
+      max-width: 580px;
     }
+
+    .hero-bullets {
+      list-style: none;
+      margin-bottom: 32px;
+    }
+
+    .hero-bullets li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.95);
+    }
+
+    .hero-bullets li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      background: var(--color-secondary);
+      border-radius: var(--radius-sm);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      mask-size: contain;
+      -webkit-mask-size: contain;
+    }
+
     .hero-ctas {
       display: flex;
       flex-wrap: wrap;
       gap: 16px;
       align-items: center;
+      margin-bottom: 12px;
     }
+
+    .hero-micro {
+      font-size: var(--font-size-small);
+      color: rgba(255,255,255,0.7);
+    }
+
     .hero-portrait {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .hero-portrait img {
+      width: 320px;
+      height: auto;
+      border-radius: var(--radius-lg) var(--radius-lg) 0 0;
       object-fit: cover;
-      border: 4px solid rgba(255, 202, 1, 0.4);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Stats Bar */
+    .stats-bar {
+      background: var(--color-primary-dark);
+      padding: 32px 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stats-bar .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+
+    .stat-item {
+      padding: 0 8px;
+    }
+
+    .stat-number {
+      font-size: 2.25rem;
+      font-weight: 800;
+      color: var(--color-secondary);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: var(--font-size-small);
+      color: rgba(255,255,255,0.85);
+      line-height: 1.3;
+    }
+
+    /* ===== Social Proof Bar ===== */
+    .social-proof {
+      background: var(--color-surface);
+      padding: var(--section-padding-compact);
+    }
+
+    .social-proof h2 {
+      text-align: center;
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      font-weight: 600;
+      color: var(--color-text-secondary);
+      margin-bottom: 32px;
+    }
+
+    .logo-categories {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .logo-category {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .logo-category-label {
+      font-size: var(--font-size-small);
+      font-weight: 700;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      min-width: 100px;
       flex-shrink: 0;
     }
 
-    @media (max-width: 768px) {
-      .hero {
-        padding: 120px 0 64px;
-      }
-      .hero-inner {
-        grid-template-columns: 1fr;
-        gap: 32px;
-        text-align: center;
-      }
-      .hero-content { max-width: 100%; }
-      .hero-sub { margin-left: auto; margin-right: auto; }
-      .hero-ctas { justify-content: center; flex-direction: column; }
-      .hero-ctas .btn-primary,
-      .hero-ctas .btn-secondary { width: 100%; }
-      .hero-portrait {
-        width: 140px;
-        height: 140px;
-        margin: 0 auto;
-        order: -1;
-      }
-    }
-
-    /* ========================================
-       TRUST BAR
-       ======================================== */
-    .trust-bar {
-      background: var(--color-bg);
-      padding: 60px 0;
-      position: relative;
-      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
-    }
-    .trust-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
+    .logo-row {
+      display: flex;
+      align-items: center;
       gap: 32px;
-    }
-    .trust-item {
-      text-align: center;
-      padding: 16px 8px;
-      position: relative;
-    }
-    .trust-item:not(:last-child)::after {
-      content: "";
-      position: absolute;
-      right: -16px;
-      top: 10%;
-      height: 80%;
-      width: 1px;
-      background: var(--color-border);
-    }
-    .trust-number {
-      font-size: 3rem;
-      font-weight: 800;
-      color: var(--color-primary);
-      line-height: 1;
-      margin-bottom: 8px;
-      letter-spacing: -0.02em;
-    }
-    .trust-label {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--color-text);
-      margin-bottom: 4px;
-    }
-    .trust-sublabel {
-      font-size: 0.875rem;
-      color: var(--color-text-secondary);
-      line-height: 1.4;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding: 8px 0;
     }
 
-    @media (max-width: 1024px) {
-      .trust-grid { grid-template-columns: repeat(2, 1fr); }
-      .trust-item:nth-child(2)::after { display: none; }
-    }
-    @media (max-width: 768px) {
-      .trust-bar { padding: 40px 0; }
-      .trust-grid { grid-template-columns: 1fr; gap: 24px; }
-      .trust-item::after { display: none; }
-      .trust-item { padding: 12px 0; border-bottom: 1px solid var(--color-border); }
-      .trust-item:last-child { border-bottom: none; }
-      .trust-number { font-size: 2.5rem; }
+    .logo-row::-webkit-scrollbar {
+      display: none;
     }
 
-    /* ========================================
-       LEISTUNGEN
-       ======================================== */
-    .leistungen {
-      background: var(--color-surface);
+    .logo-row img {
+      height: 40px;
+      width: auto;
+      flex-shrink: 0;
+      filter: grayscale(1) opacity(0.6);
+      transition: filter 0.3s ease;
+    }
+
+    .logo-row img:hover {
+      filter: grayscale(0) opacity(1);
+    }
+
+    /* ===== Benefits Section ===== */
+    .benefits {
+      background: var(--color-bg);
       padding: var(--section-padding);
     }
-    .services-grid {
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-header h2 {
+      margin-bottom: 12px;
+      color: var(--color-text);
+    }
+
+    .section-header p {
+      color: var(--color-text-secondary);
+      max-width: 640px;
+      margin: 0 auto;
+      font-size: var(--font-size-body);
+    }
+
+    .benefits-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: var(--gap);
     }
-    .service-card {
+
+    .benefit-card {
       background: var(--color-bg);
       border-radius: var(--radius-md);
-      padding: var(--card-padding);
       box-shadow: var(--shadow-card);
-      transition: box-shadow 0.3s, transform 0.2s;
-      position: relative;
-      overflow: hidden;
+      padding: var(--card-padding);
+      border-left: 3px solid var(--color-primary);
+      transition: box-shadow 0.3s ease, transform 0.3s ease;
     }
-    .service-card::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
-    .service-card:hover {
+
+    .benefit-card:hover {
       box-shadow: var(--shadow-card-hover);
-      transform: translateY(-3px);
-    }
-    .service-card:hover::before { opacity: 1; }
-    .service-icon {
-      width: 56px;
-      height: 56px;
-      margin-bottom: 20px;
-    }
-    .service-card h3 {
-      font-family: var(--font-heading);
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--color-text);
-      margin-bottom: 12px;
-      line-height: 1.3;
-    }
-    .service-card p {
-      font-size: 1rem;
-      color: var(--color-text-secondary);
-      line-height: 1.6;
+      transform: translateY(-2px);
     }
 
-    @media (max-width: 768px) {
-      .services-grid { grid-template-columns: 1fr; }
+    .benefit-card-icon {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 16px;
     }
 
-    /* ========================================
-       PROZESS
-       ======================================== */
-    .prozess {
-      background: var(--color-bg);
-      padding: var(--section-padding);
-    }
-    .steps-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      position: relative;
-      margin-bottom: 48px;
-    }
-    .steps-grid::before {
-      content: "";
-      position: absolute;
-      top: 32px;
-      left: calc(12.5% + 12px);
-      right: calc(12.5% + 12px);
-      height: 3px;
-      background: linear-gradient(90deg, var(--color-primary), var(--color-secondary), var(--color-primary));
-      border-radius: 2px;
-      z-index: 0;
-    }
-    .step-item {
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-    .step-number {
-      width: 64px;
-      height: 64px;
-      border-radius: 50%;
-      background: var(--color-primary);
-      color: #FFFFFF;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin: 0 auto 16px;
-      position: relative;
-      box-shadow: 0 4px 12px rgba(0, 114, 121, 0.25);
-    }
-    .step-icon {
-      width: 48px;
-      height: 48px;
-      margin: 0 auto 16px;
-    }
-    .step-item h3 {
-      font-family: var(--font-heading);
-      font-size: 1.125rem;
-      font-weight: 700;
+    .benefit-card h3 {
       color: var(--color-text);
       margin-bottom: 10px;
     }
-    .step-item p {
-      font-size: 0.9375rem;
+
+    .benefit-card p {
       color: var(--color-text-secondary);
-      line-height: 1.55;
-    }
-    .steps-cta {
-      text-align: center;
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
-    @media (max-width: 768px) {
-      .steps-grid {
-        grid-template-columns: 1fr;
-        gap: 0;
-        padding-left: 48px;
-      }
-      .steps-grid::before {
-        top: 0;
-        bottom: 0;
-        left: 20px;
-        right: auto;
-        width: 3px;
-        height: auto;
-      }
-      .step-item {
-        text-align: left;
-        padding: 0 0 32px;
-        position: relative;
-      }
-      .step-item:last-child { padding-bottom: 0; }
-      .step-number {
-        position: absolute;
-        left: -48px;
-        top: 0;
-        width: 44px;
-        height: 44px;
-        font-size: 1.125rem;
-        margin: 0;
-      }
-      .step-icon {
-        width: 40px;
-        height: 40px;
-        margin: 0 0 12px;
-      }
-    }
-
-    /* ========================================
-       SOCIAL PROOF
-       ======================================== */
-    .social-proof {
+    /* ===== How It Works ===== */
+    .how-it-works {
       background: var(--color-surface);
       padding: var(--section-padding);
     }
+
+    .timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      position: relative;
+      margin-top: 48px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 20px;
+      left: calc(12.5% + 20px);
+      right: calc(12.5% + 20px);
+      height: 2px;
+      background: var(--color-border);
+      z-index: 0;
+    }
+
+    .timeline-step {
+      text-align: center;
+      position: relative;
+      padding: 0 12px;
+    }
+
+    .step-number {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-round);
+      background: var(--color-primary);
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 1.125rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .timeline-step-icon {
+      width: 60px;
+      height: 60px;
+      margin: 0 auto 12px;
+    }
+
+    .timeline-step h3 {
+      color: var(--color-text);
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .timeline-step p {
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .how-it-works-cta {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    /* ===== Testimonials ===== */
+    .testimonials {
+      background: var(--color-bg);
+      padding: var(--section-padding);
+    }
+
     .testimonials-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: var(--gap);
-      margin-bottom: 64px;
     }
+
     .testimonial-card {
       background: var(--color-bg);
       border-radius: var(--radius-md);
-      padding: var(--card-padding);
       box-shadow: var(--shadow-card);
+      padding: 40px var(--card-padding);
+      border-left: 3px solid var(--color-secondary);
       display: flex;
       flex-direction: column;
-      transition: box-shadow 0.3s, transform 0.2s;
+      transition: box-shadow 0.3s ease;
     }
+
     .testimonial-card:hover {
       box-shadow: var(--shadow-card-hover);
-      transform: translateY(-2px);
     }
+
     .testimonial-stars {
       height: 20px;
       width: auto;
       margin-bottom: 16px;
     }
+
     .testimonial-quote {
-      font-size: 1rem;
-      color: var(--color-text-secondary);
-      line-height: 1.65;
+      font-size: var(--font-size-body);
+      color: var(--color-text);
+      line-height: 1.6;
+      margin-bottom: 24px;
       flex-grow: 1;
-      margin-bottom: 20px;
       position: relative;
       padding-left: 0;
     }
+
     .testimonial-quote::before {
       content: "\201E";
-      font-size: 2.5rem;
-      color: var(--color-primary);
-      opacity: 0.25;
-      line-height: 1;
-      display: block;
-      margin-bottom: 4px;
-      font-family: Georgia, serif;
-    }
-    .testimonial-author {
-      font-weight: 700;
-      color: var(--color-text);
-      font-size: 0.9375rem;
-    }
-    .testimonial-company {
-      color: var(--color-primary);
-      font-size: 0.875rem;
-      font-weight: 600;
-    }
-    .testimonial-company a {
-      color: var(--color-primary);
-      text-decoration: underline;
-      text-decoration-thickness: 1px;
-      text-underline-offset: 2px;
-      transition: color 0.2s;
-    }
-    .testimonial-company a:hover { color: var(--color-accent); }
-
-    @media (max-width: 1024px) {
-      .testimonials-grid { grid-template-columns: 1fr; }
-    }
-
-    /* Case Study */
-    .case-study {
-      background: var(--color-bg);
-      border-radius: var(--radius-md);
-      padding: 40px;
-      border-left: 4px solid var(--color-primary);
-      box-shadow: var(--shadow-card);
-      margin-bottom: 56px;
-    }
-    .case-study h3 {
-      font-family: var(--font-heading);
-      font-size: var(--h3-size);
-      font-weight: 700;
-      color: var(--color-text);
-      margin-bottom: 16px;
-    }
-    .case-study-challenge {
-      font-size: 1rem;
-      color: var(--color-text-secondary);
-      line-height: 1.6;
-      margin-bottom: 28px;
-    }
-    .case-results {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      margin-bottom: 28px;
-    }
-    .case-result-item {
-      text-align: center;
-      padding: 20px 12px;
-      background: var(--color-surface);
-      border-radius: var(--radius-md);
-    }
-    .case-result-metric {
-      font-size: 2.25rem;
+      font-size: 3rem;
+      color: var(--color-secondary);
       font-weight: 800;
-      color: var(--color-primary);
       line-height: 1;
-      margin-bottom: 6px;
-    }
-    .case-result-label {
-      font-size: 0.875rem;
-      color: var(--color-text-secondary);
-      line-height: 1.4;
-    }
-    .case-study-quote {
-      font-size: 1rem;
-      color: var(--color-text-secondary);
-      line-height: 1.65;
-      font-style: italic;
-      border-top: 1px solid var(--color-border);
-      padding-top: 20px;
-    }
-    .case-study-quote-author {
-      font-style: normal;
-      font-weight: 700;
-      color: var(--color-text);
       display: block;
-      margin-top: 8px;
-      font-size: 0.9375rem;
+      margin-bottom: -8px;
     }
 
-    @media (max-width: 768px) {
-      .case-study { padding: 24px; }
-      .case-results { grid-template-columns: 1fr; gap: 12px; }
-      .case-result-metric { font-size: 1.75rem; }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
     }
 
-    /* Client Logos */
-    .client-logos-section { margin-top: 8px; }
-    .client-logos-heading {
-      font-size: 0.9375rem;
-      font-weight: 600;
-      color: var(--color-text-secondary);
-      text-align: center;
-      margin-bottom: 28px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .client-logos-track {
+    .author-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: var(--radius-round);
+      background: var(--color-primary);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 32px 40px;
-    }
-    .client-logo {
-      height: 36px;
-      width: auto;
-      max-width: 100px;
-      filter: grayscale(100%) opacity(0.55);
-      transition: filter 0.3s, opacity 0.3s;
-    }
-    .client-logo:hover {
-      filter: grayscale(0%) opacity(1);
-    }
-
-    @media (max-width: 768px) {
-      .client-logos-track { gap: 20px 28px; }
-      .client-logo { height: 28px; max-width: 80px; }
-    }
-
-    /* ========================================
-       PREISE
-       ======================================== */
-    .preise {
-      background: var(--color-bg);
-      padding: var(--section-padding);
-    }
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--gap);
-      margin-bottom: 32px;
-    }
-    .pricing-card {
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-md);
-      padding: var(--card-padding);
-      text-align: center;
-      transition: box-shadow 0.3s, transform 0.2s, border-color 0.3s;
-      position: relative;
-    }
-    .pricing-card:hover {
-      box-shadow: var(--shadow-card-hover);
-      transform: translateY(-3px);
-      border-color: var(--color-primary);
-    }
-    .pricing-name {
-      font-family: var(--font-heading);
-      font-size: 1.125rem;
-      font-weight: 700;
-      color: var(--color-text);
-      margin-bottom: 16px;
-    }
-    .pricing-price {
-      font-size: 2rem;
-      font-weight: 800;
-      color: var(--color-primary);
-      line-height: 1;
-      margin-bottom: 4px;
-    }
-    .pricing-period {
-      font-size: 0.875rem;
-      color: var(--color-text-secondary);
-      margin-bottom: 24px;
-    }
-    .pricing-includes {
-      text-align: left;
-    }
-    .pricing-includes li {
-      font-size: 0.9375rem;
-      color: var(--color-text-secondary);
-      line-height: 1.5;
-      padding: 6px 0;
-      padding-left: 28px;
-      position: relative;
-    }
-    .pricing-includes li::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      top: 10px;
-      width: 18px;
-      height: 18px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%23007279' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
-    .pricing-note {
-      font-size: 0.875rem;
-      color: var(--color-text-secondary);
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto 32px;
-      line-height: 1.6;
-    }
-    .pricing-cta {
-      text-align: center;
-    }
-
-    @media (max-width: 768px) {
-      .pricing-grid { grid-template-columns: 1fr; }
-    }
-
-    /* ========================================
-       FAQ
-       ======================================== */
-    .faq {
-      background: var(--color-surface);
-      padding: var(--section-padding);
-    }
-    .faq-list {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .faq-item {
-      border-bottom: 1px solid var(--color-border);
-    }
-    .faq-question {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 0;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      text-align: left;
-      gap: 16px;
-      color: var(--color-text);
-    }
-    .faq-question:focus-visible {
-      outline: 2px solid var(--color-primary);
-      outline-offset: 4px;
-      border-radius: 4px;
-    }
-    .faq-question-text {
-      font-family: var(--font-heading);
-      font-size: 1.125rem;
-      font-weight: 700;
-      line-height: 1.4;
-    }
-    .faq-icon {
-      width: 28px;
-      height: 28px;
       flex-shrink: 0;
-      color: var(--color-primary);
-      transition: transform 0.3s ease;
-    }
-    .faq-item.open .faq-icon {
-      transform: rotate(45deg);
-    }
-    .faq-answer {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.35s ease, padding 0.35s ease;
-    }
-    .faq-item.open .faq-answer {
-      max-height: 500px;
-    }
-    .faq-answer-inner {
-      padding: 0 0 24px;
-      font-size: 1rem;
-      color: var(--color-text-secondary);
-      line-height: 1.65;
     }
 
-    /* ========================================
-       FINAL CTA / FORM
-       ======================================== */
-    .final-cta {
-      background: linear-gradient(135deg, #007279 0%, #005a5f 100%);
+    .author-name {
+      font-weight: 700;
+      color: var(--color-text);
+      font-size: 1rem;
+    }
+
+    .author-company {
+      font-weight: 400;
+      color: var(--color-text-secondary);
+      font-size: var(--font-size-small);
+    }
+
+    /* ===== Case Study ===== */
+    .case-study {
+      background: var(--color-primary);
+      color: #ffffff;
       padding: var(--section-padding);
       position: relative;
       overflow: hidden;
     }
-    .final-cta::before {
+
+    .case-study::before {
       content: "";
       position: absolute;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      bottom: -20%;
+      right: -10%;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: rgba(255,202,1,0.05);
       pointer-events: none;
     }
-    .final-cta-inner {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 56px;
-      align-items: start;
+
+    .case-study .container {
       position: relative;
       z-index: 1;
     }
-    .final-cta-text h2 {
-      font-family: var(--font-heading);
-      font-size: var(--h2-size);
-      font-weight: 700;
-      line-height: 1.2;
-      color: #FFFFFF;
+
+    .case-study-header {
+      margin-bottom: 40px;
+    }
+
+    .case-study-header h2 {
+      color: #ffffff;
       margin-bottom: 16px;
     }
-    .final-cta-text .subheading {
-      font-size: 1.125rem;
-      color: rgba(255, 255, 255, 0.9);
+
+    .case-study-intro {
+      color: rgba(255,255,255,0.95);
+      font-size: var(--font-size-body);
+      max-width: 700px;
+    }
+
+    .case-study-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .case-study-narrative {}
+
+    .case-study-block {
       margin-bottom: 24px;
-      line-height: 1.5;
     }
-    .final-cta-benefits {
-      margin-bottom: 28px;
+
+    .case-study-block-label {
+      font-size: var(--font-size-small);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-secondary);
+      margin-bottom: 8px;
     }
-    .final-cta-benefits li {
-      color: rgba(255, 255, 255, 0.92);
+
+    .case-study-block p {
+      color: rgba(255,255,255,0.92);
+      line-height: 1.6;
       font-size: 1rem;
-      line-height: 1.5;
-      padding: 8px 0;
-      padding-left: 32px;
-      position: relative;
     }
-    .final-cta-benefits li::before {
+
+    .case-study-results {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-top: 8px;
+    }
+
+    .result-item {
+      text-align: center;
+      padding: 24px;
+      background: rgba(255,255,255,0.06);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .result-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--color-secondary);
+      line-height: 1.1;
+      margin-bottom: 4px;
+    }
+
+    .result-label {
+      font-size: var(--font-size-small);
+      color: rgba(255,255,255,0.85);
+    }
+
+    .case-study-cta {
+      margin-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      align-items: center;
+    }
+
+    .case-study-cta-text {
+      font-size: var(--font-size-body);
+      font-weight: 600;
+      color: rgba(255,255,255,0.95);
+    }
+
+    .case-study-link {
+      color: var(--color-secondary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      font-weight: 600;
+      transition: opacity 0.2s;
+    }
+
+    .case-study-link:hover {
+      opacity: 0.8;
+    }
+
+    /* ===== Pricing ===== */
+    .pricing {
+      background: var(--color-surface);
+      padding: var(--section-padding);
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--gap);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .pricing-card {
+      background: var(--color-bg);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-card);
+      padding: 40px var(--card-padding);
+      position: relative;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .pricing-card:hover {
+      box-shadow: var(--shadow-card-hover);
+    }
+
+    .pricing-card.highlighted {
+      border-top: 4px solid var(--color-secondary);
+    }
+
+    .pricing-card-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--color-text);
+      margin-bottom: 8px;
+    }
+
+    .pricing-card-price {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--color-primary);
+      line-height: 1.2;
+      margin-bottom: 4px;
+    }
+
+    .pricing-card-note {
+      font-size: var(--font-size-small);
+      color: var(--color-text-secondary);
+      margin-bottom: 24px;
+    }
+
+    .pricing-features {
+      list-style: none;
+    }
+
+    .pricing-features li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 12px;
+      font-size: 1rem;
+      color: var(--color-text-secondary);
+      line-height: 1.5;
+    }
+
+    .pricing-features li::before {
       content: "";
       position: absolute;
       left: 0;
-      top: 12px;
-      width: 20px;
-      height: 20px;
-      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23FFCA01' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
-      background-size: contain;
-      background-repeat: no-repeat;
+      top: 3px;
+      width: 18px;
+      height: 18px;
+      background: var(--color-primary);
+      border-radius: var(--radius-sm);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      mask-size: contain;
+      -webkit-mask-size: contain;
     }
-    .final-cta-promise {
+
+    .pricing-additional {
+      text-align: center;
+      margin-top: 32px;
+      color: var(--color-text-secondary);
       font-size: 1rem;
-      color: rgba(255, 255, 255, 0.85);
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
       line-height: 1.6;
-      margin-bottom: 24px;
     }
-    .final-cta-alt {
-      font-size: 0.9375rem;
-      color: rgba(255, 255, 255, 0.8);
+
+    .pricing-cta {
+      text-align: center;
+      margin-top: 32px;
     }
-    .final-cta-alt a {
-      color: var(--color-secondary);
-      font-weight: 700;
-      text-decoration: underline;
-      text-decoration-thickness: 2px;
-      text-underline-offset: 3px;
+
+    /* ===== FAQ ===== */
+    .faq {
+      background: var(--color-bg);
+      padding: var(--section-padding);
+    }
+
+    .faq-inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 24px 48px 24px 0;
+      font-family: var(--font-family);
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--color-text);
+      cursor: pointer;
+      position: relative;
+      line-height: 1.4;
       transition: color 0.2s;
     }
-    .final-cta-alt a:hover { color: #FFFFFF; }
+
+    .faq-question:hover {
+      color: var(--color-primary);
+    }
+
+    .faq-question::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%) rotate(0deg);
+      width: 24px;
+      height: 24px;
+      background: var(--color-primary);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      mask-size: contain;
+      -webkit-mask-size: contain;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.open .faq-question::after {
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      padding: 0 0 0 0;
+    }
+
+    .faq-item.open .faq-answer {
+      max-height: 500px;
+      padding: 0 0 24px 0;
+    }
+
+    .faq-answer p {
+      color: var(--color-text-secondary);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* ===== Final CTA ===== */
+    .final-cta {
+      background: var(--color-primary);
+      color: #ffffff;
+      padding: var(--section-padding);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .final-cta::before {
+      content: "";
+      position: absolute;
+      top: -30%;
+      left: -15%;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      background: rgba(0,90,95,0.3);
+      pointer-events: none;
+    }
+
+    .final-cta .container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .final-cta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .final-cta-content h2 {
+      color: #ffffff;
+      margin-bottom: 16px;
+    }
+
+    .final-cta-content > p {
+      color: rgba(255,255,255,0.95);
+      margin-bottom: 20px;
+      font-size: var(--font-size-body);
+    }
+
+    .final-cta-bullets {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .final-cta-bullets li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 10px;
+      color: rgba(255,255,255,0.95);
+      font-size: 1rem;
+    }
+
+    .final-cta-bullets li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 18px;
+      height: 18px;
+      background: var(--color-secondary);
+      border-radius: var(--radius-sm);
+      mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+      mask-size: contain;
+      -webkit-mask-size: contain;
+    }
+
+    .final-cta-reassurance {
+      font-size: var(--font-size-small);
+      color: rgba(255,255,255,0.7);
+      font-weight: 600;
+    }
 
     /* Form */
-    .form-card {
+    .form-container {
       background: var(--color-bg);
-      border-radius: 12px;
-      padding: 40px;
+      border-radius: var(--radius-lg);
       box-shadow: var(--shadow-form);
+      padding: 40px;
     }
+
     .form-group {
       margin-bottom: 20px;
     }
+
     .form-label {
       display: block;
-      font-size: 0.875rem;
+      font-size: var(--font-size-small);
       font-weight: 600;
       color: var(--color-text);
       margin-bottom: 6px;
     }
-    .form-label .required { color: var(--color-error); }
+
+    .form-label .required {
+      color: #e74c3c;
+    }
+
     .form-input,
     .form-textarea {
       width: 100%;
-      border: 1px solid var(--color-border);
-      border-radius: 6px;
-      padding: 14px 16px;
+      font-family: var(--font-family);
       font-size: 1rem;
+      padding: 14px 16px;
+      border: 1.5px solid var(--color-border);
+      border-radius: var(--radius-md);
+      background: var(--color-bg);
       color: var(--color-text);
-      background: #fff;
       transition: border-color 0.2s, box-shadow 0.2s;
-      outline: none;
+      -webkit-appearance: none;
     }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-primary);
+      box-shadow: 0 0 0 3px rgba(0,114,121,0.15);
+    }
+
     .form-input::placeholder,
     .form-textarea::placeholder {
       color: #aaa;
     }
-    .form-input:focus,
-    .form-textarea:focus {
-      border-color: var(--color-primary);
-      box-shadow: 0 0 0 3px rgba(0, 114, 121, 0.12);
-    }
+
     .form-textarea {
       resize: vertical;
       min-height: 100px;
     }
+
     .form-submit {
       width: 100%;
-      padding: 16px;
-      font-size: 1.125rem;
-      font-weight: 700;
       background: var(--color-secondary);
       color: var(--color-cta-text);
+      font-family: var(--font-family);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 18px 40px;
       border: none;
       border-radius: var(--radius-md);
       cursor: pointer;
-      transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
-      box-shadow: var(--shadow-cta);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      line-height: 1.3;
     }
-    .form-submit:hover {
-      background: #e6b600;
-      box-shadow: 0 6px 20px rgba(0, 114, 121, 0.35);
-      transform: translateY(-1px);
-    }
-    .form-submit:active { transform: translateY(0); }
+
+    .form-submit:hover,
     .form-submit:focus-visible {
-      outline: 3px solid var(--color-secondary);
-      outline-offset: 3px;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(255,202,1,0.4);
     }
-    .form-trust {
-      font-size: 0.8125rem;
+
+    .form-submit:active {
+      transform: translateY(0);
+    }
+
+    .form-privacy {
+      font-size: 0.8rem;
       color: var(--color-text-secondary);
+      margin-top: 12px;
+      text-align: center;
+    }
+
+    .form-micro {
       text-align: center;
       margin-top: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-    }
-    .form-trust svg { width: 14px; height: 14px; flex-shrink: 0; color: var(--color-success); }
-
-    @media (max-width: 768px) {
-      .final-cta-inner {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-      .form-card { padding: 28px 24px; }
+      font-size: var(--font-size-small);
+      color: rgba(255,255,255,0.7);
     }
 
-    /* ========================================
-       MOBILE STICKY CTA
-       ======================================== */
-    .mobile-sticky-cta {
+    /* ===== Sticky Mobile CTA ===== */
+    .mobile-cta-bar {
       display: none;
       position: fixed;
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: 999;
-      background: var(--color-secondary);
-      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-      height: 60px;
-      opacity: 0;
+      z-index: 99;
+      background: rgba(0, 114, 121, 0.97);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      padding: 12px var(--container-padding);
+      border-top: 1px solid rgba(255,255,255,0.15);
       transform: translateY(100%);
-      transition: opacity 0.3s, transform 0.3s;
+      transition: transform 0.3s ease;
     }
-    .mobile-sticky-cta.visible {
-      opacity: 1;
+
+    .mobile-cta-bar.visible {
       transform: translateY(0);
     }
-    .mobile-sticky-cta a {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
+
+    .mobile-cta-bar .btn-primary {
       width: 100%;
-      font-weight: 700;
-      font-size: 1rem;
-      color: var(--color-cta-text);
-      padding: 0 24px;
+      font-size: 16px;
+      padding: 14px 24px;
     }
 
-    @media (max-width: 768px) {
-      .mobile-sticky-cta { display: block; }
-      body { padding-bottom: 60px; }
-    }
+    /* ===== Responsive ===== */
 
-    /* ========================================
-       FOOTER (Original)
-       ======================================== */
-    .site-footer a:focus-visible {
-      outline: 2px solid var(--color-secondary);
-      outline-offset: 2px;
-    }
-
-    /* ========================================
-       Animations
-       ======================================== */
-    @media (prefers-reduced-motion: no-preference) {
-      .fade-up {
-        opacity: 0;
-        transform: translateY(24px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
+    /* Tablet */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr 240px;
+        gap: 32px;
       }
-      .fade-up.visible {
+
+      .hero-portrait img {
+        width: 240px;
+      }
+
+      .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .timeline {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+      }
+
+      .timeline::before {
+        display: none;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials-grid .testimonial-card:last-child {
+        grid-column: 1 / -1;
+        max-width: 50%;
+        justify-self: center;
+      }
+
+      .case-study-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .case-study-results {
+        flex-direction: row;
+        gap: 16px;
+      }
+
+      .result-item {
+        flex: 1;
+      }
+
+      .final-cta-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .hero {
+        padding-top: 100px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        text-align: center;
+      }
+
+      .hero-content {
+        padding-bottom: 0;
+        order: 1;
+      }
+
+      .hero-portrait {
+        order: 2;
+        justify-content: center;
+      }
+
+      .hero-portrait img {
+        width: 150px;
+        border-radius: var(--radius-lg);
+      }
+
+      .hero-subheadline {
+        max-width: 100%;
+      }
+
+      .hero-bullets {
+        text-align: left;
+        display: inline-block;
+      }
+
+      .hero-ctas {
+        justify-content: center;
+      }
+
+      .hero-micro {
+        text-align: center;
+      }
+
+      .stats-bar .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .logo-category {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+
+      .logo-category-label {
+        min-width: auto;
+      }
+
+      .benefits-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .timeline {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding-left: 24px;
+      }
+
+      .timeline::before {
+        display: block;
+        top: 20px;
+        bottom: 20px;
+        left: 19px;
+        right: auto;
+        width: 2px;
+        height: auto;
+      }
+
+      .timeline-step {
+        text-align: left;
+        padding-left: 36px;
+      }
+
+      .step-number {
+        position: absolute;
+        left: -36px;
+        margin: 0;
+      }
+
+      .timeline-step-icon {
+        margin: 0 0 12px;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-grid .testimonial-card:last-child {
+        grid-column: auto;
+        max-width: 100%;
+      }
+
+      .case-study-results {
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .result-item {
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-align: left;
+      }
+
+      .result-number {
+        font-size: 2rem;
+        min-width: 120px;
+      }
+
+      .pricing-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .final-cta-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .form-container {
+        padding: 28px 20px;
+      }
+
+      .mobile-cta-bar {
+        display: block;
+      }
+
+      /* Add bottom padding for sticky bar */
+      body {
+        padding-bottom: 70px;
+      }
+    }
+
+    /* ===== Animations ===== */
+    @media (prefers-reduced-motion: no-preference) {
+      .benefit-card,
+      .testimonial-card,
+      .pricing-card,
+      .timeline-step,
+      .result-item {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+      }
+
+      .animate-in {
         opacity: 1;
         transform: translateY(0);
       }
-      .fade-up-delay-1 { transition-delay: 0.1s; }
-      .fade-up-delay-2 { transition-delay: 0.2s; }
-      .fade-up-delay-3 { transition-delay: 0.3s; }
-      .fade-up-delay-4 { transition-delay: 0.4s; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .fade-up { opacity: 1; transform: none; }
-    }
-
-    /* ========================================
-       Focus styles
-       ======================================== */
-    a:focus-visible,
-    button:focus-visible {
-      outline: 3px solid var(--color-primary);
-      outline-offset: 3px;
-      border-radius: 4px;
-    }
-
-    /* ========================================
-       Print
-       ======================================== */
-    @media print {
-      .site-header,
-      .mobile-sticky-cta { display: none !important; }
-      .hero { padding-top: 40px; }
-      body { padding-bottom: 0; }
     }
   </style>
 
-  <!-- Schema Markup: LocalBusiness -->
+  <!-- Schema Markup: ProfessionalService -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
-    "@id": "https://matthias-wieser.com/google-ads-agentur-wien/#localbusiness",
     "name": "Wieser Digital Marketing - Google Ads Agentur Wien",
-    "description": "Spezialisierte Google Ads Agentur in Wien mit über 17 Jahren Erfahrung. Kampagnen-Management, Conversion-Optimierung und Web-Tracking für KMUs.",
+    "description": "Google Ads Agentur Wien mit 17+ Jahren Erfahrung und 1.000+ optimierten Kampagnen. Kampagnen-Management, Conversion-Optimierung und Tracking aus einer Hand.",
     "url": "https://matthias-wieser.com/google-ads-agentur-wien/",
     "telephone": "+436502715011",
     "email": "mw@matthias-wieser.com",
@@ -1211,40 +1392,20 @@
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 48.2920275,
-      "longitude": 16.3432704
+      "latitude": 48.2282,
+      "longitude": 16.3360
     },
-    "priceRange": "€€",
+    "image": "assets/images/MW_Portrait.jpg",
+    "priceRange": "$$",
     "openingHours": "Mo-Fr 09:00-18:00",
     "areaServed": {
       "@type": "Country",
-      "name": "Österreich"
+      "name": "Austria"
     },
     "founder": {
       "@type": "Person",
       "name": "Mag. Matthias Wieser"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "bestRating": "5",
-      "ratingCount": "3",
-      "reviewCount": "3"
     }
-  }
-  </script>
-
-  <!-- Schema Markup: Service -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Google Ads Management",
-    "provider": {
-      "@id": "https://matthias-wieser.com/google-ads-agentur-wien/#localbusiness"
-    },
-    "areaServed": "Wien, Österreich",
-    "description": "Professionelles Google Ads Kampagnen-Management mit Conversion-Optimierung und Web-Tracking."
   }
   </script>
 
@@ -1259,7 +1420,7 @@
         "name": "Was kostet eine Google Ads Agentur in Wien?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Die Kosten für eine Google Ads Agentur in Wien variieren je nach Leistungsumfang. Bei Wieser Digital Marketing starten die Preise ab 599 € netto pro Monat für die laufende Betreuung, plus ein einmaliges Kampagnen-Setup ab 1.699 €. Dazu kommt Ihr Werbebudget, das direkt an Google geht (empfohlen ab 1.500 €/Monat). Wir arbeiten mit transparenten Fixpreisen -- keine versteckten Kosten, keine prozentuale Budgetbeteiligung."
+          "text": "Die Kosten f\u00fcr eine Google Ads Agentur in Wien variieren je nach Leistungsumfang. Bei uns starten die Preise ab 599 \u20ac netto pro Monat f\u00fcr die laufende Betreuung, plus ein einmaliges Kampagnen-Setup ab 1.699 \u20ac. Dazu kommt Ihr Werbebudget, das direkt an Google geht (empfohlen ab 1.500 \u20ac/Monat). Wir arbeiten mit transparenten Fixpreisen -- keine versteckten Kosten, keine prozentuale Budgetbeteiligung."
         }
       },
       {
@@ -1267,15 +1428,15 @@
         "name": "Wie schnell erzielt man Ergebnisse mit Google Ads?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Erste Ergebnisse sehen Sie oft schon in den ersten Wochen nach Kampagnenstart. Die volle Optimierung braucht in der Regel 2-3 Monate, da wir Daten sammeln und Kampagnen schrittweise verfeinern müssen. Deshalb arbeiten wir mit einer Mindestlaufzeit von 3 Monaten. In dieser Zeit bauen wir Ihre Kampagnen zur vollen Leistungsfähigkeit auf."
+          "text": "Erste Ergebnisse sehen Sie oft schon in den ersten Wochen nach Kampagnenstart. Die volle Optimierung braucht in der Regel 2-3 Monate, da wir Daten sammeln und Kampagnen schrittweise verfeinern. Deshalb arbeiten wir mit einer Mindestlaufzeit von 3 Monaten."
         }
       },
       {
         "@type": "Question",
-        "name": "Lohnt sich Google Ads für kleine Unternehmen und KMUs?",
+        "name": "Lohnt sich Google Ads f\u00fcr kleine Unternehmen und KMUs?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja, gerade für KMUs ist Google Ads einer der effizientesten Werbekanäle. Sie erreichen Ihre Zielgruppe genau dann, wenn diese aktiv nach Ihrem Angebot sucht. Entscheidend ist die richtige Strategie: Wir haben über 1.000 Kampagnen für kleine und mittlere Unternehmen in Wien und Österreich optimiert und wissen, wie man auch mit überschaubaren Budgets ab 1.500 € pro Monat messbare Ergebnisse erzielt."
+          "text": "Ja, gerade f\u00fcr KMUs ist Google Ads einer der effizientesten Werbekan\u00e4le. Sie erreichen Ihre Zielgruppe genau dann, wenn diese aktiv nach Ihrem Angebot sucht. Wir haben \u00fcber 1.000 Kampagnen f\u00fcr kleine und mittlere Unternehmen in Wien und \u00d6sterreich optimiert."
         }
       },
       {
@@ -1283,7 +1444,7 @@
         "name": "Kann ich meine bestehende Google Ads Agentur wechseln?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ja, ein Agenturwechsel ist jederzeit möglich. Ihr Google Ads Konto gehört Ihnen. Wir übernehmen die bestehenden Kampagnen, führen ein umfassendes Audit durch und optimieren die Struktur. Der Übergang ist nahtlos -- es gibt keine Ausfallzeit. Starten Sie mit unserer kostenlosen Potenzialanalyse, um zu sehen, wo Verbesserungspotenzial liegt."
+          "text": "Ja, ein Agenturwechsel ist jederzeit m\u00f6glich. Ihr Google Ads Konto geh\u00f6rt Ihnen. Wir \u00fcbernehmen die bestehenden Kampagnen, f\u00fchren ein umfassendes Audit durch und optimieren die Struktur. Der \u00dcbergang ist nahtlos."
         }
       },
       {
@@ -1291,7 +1452,7 @@
         "name": "Was ist der Unterschied zwischen SEA und SEO?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "SEA (Search Engine Advertising, also Suchmaschinenwerbung) umfasst bezahlte Anzeigen in den Google Suchergebnissen. SEO (Search Engine Optimization) bezeichnet die Optimierung für organische, unbezahlte Suchergebnisse. Google Ads ist der bekannteste SEA-Kanal. Der Vorteil von SEA: Ergebnisse sind sofort messbar und Sie zahlen nur für tatsächliche Klicks. Als SEA Agentur in Wien kombinieren wir Google Ads mit Conversion-Optimierung für maximalen ROI."
+          "text": "SEA (Search Engine Advertising) umfasst bezahlte Anzeigen in den Google Suchergebnissen. SEO (Search Engine Optimization) bezeichnet die Optimierung f\u00fcr organische, unbezahlte Suchergebnisse. Google Ads ist der bekannteste SEA-Kanal. Der Vorteil von SEA: Ergebnisse sind sofort messbar und Sie zahlen nur f\u00fcr tats\u00e4chliche Klicks."
         }
       },
       {
@@ -1299,7 +1460,23 @@
         "name": "Warum scheitern Google Ads Kampagnen so oft?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Die häufigsten Gründe: falsches Keyword-Targeting, schwache Landingpages, fehlendes Conversion-Tracking und mangelnde laufende Optimierung. Viele Unternehmen richten Kampagnen einmal ein und lassen sie dann unbeaufsichtigt laufen. Professionelles Google Ads Management bedeutet kontinuierliche Optimierung von Geboten, Anzeigentexten und Zielseiten. Genau das ist unser Spezialgebiet seit über 17 Jahren."
+          "text": "Die h\u00e4ufigsten Gr\u00fcnde: falsches Keyword-Targeting, schwache Landingpages, fehlendes Conversion-Tracking und mangelnde laufende Optimierung. Professionelles Google Ads Management bedeutet kontinuierliche Optimierung von Geboten, Anzeigentexten und Zielseiten."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie hoch sollte mein Google Ads Budget sein?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "F\u00fcr KMUs empfehlen wir ein monatliches Werbebudget ab 1.500 \u20ac. Damit l\u00e4sst sich in den meisten Branchen eine solide Datenbasis aufbauen und die Kampagnen gezielt optimieren."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Google Ads selber machen oder Agentur beauftragen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Das h\u00e4ngt von Ihren Ressourcen und Ihrem Know-how ab. Google Ads selber schalten ist m\u00f6glich, erfordert aber viel Zeit f\u00fcr laufende Optimierung und aktuelles Fachwissen. Eine spezialisierte Google Ads Agentur bringt Erfahrung, aktuelle Best Practices und spart Ihnen die steile Lernkurve."
         }
       }
     ]
@@ -1329,498 +1506,494 @@
   </script>
 </head>
 <body>
-
   <a href="#main" class="skip-link">Zum Inhalt springen</a>
 
-  <!-- ============================
-       STICKY HEADER
-       ============================ -->
+  <!-- Header -->
   <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a href="https://matthias-wieser.com/" class="header-logo" aria-label="Matthias Wieser - Zur Startseite">
-        <img src="assets/images/matthias_wieser_onlinemarketing_logo.svg" alt="Matthias Wieser - Google Ads Agentur Wien" width="160" height="82">
+    <div class="header-inner">
+      <a href="https://matthias-wieser.com/" class="header-logo" aria-label="Wieser Digital Marketing - Startseite">
+        <img src="assets/images/matthias_wieser_onlinemarketing_logo_weiss.svg" alt="Matthias Wieser - Google Ads Agentur Wien" width="180" height="40">
       </a>
-      <div class="header-right">
-        <a href="tel:+436502715011" class="header-phone" aria-label="Jetzt anrufen: +43 650 271 50 11">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          +43 650 271 50 11
-        </a>
-        <a href="#formular" class="header-cta">Erstgespräch vereinbaren</a>
-      </div>
+      <a href="#formular" class="btn-primary header-cta">Kostenlose Potenzialanalyse anfordern</a>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- ============================
-         SECTION 1: HERO
-         ============================ -->
-    <section class="hero" aria-label="Google Ads Agentur Wien">
-      <div class="container hero-inner">
-        <div class="hero-content">
-          <h1>Google Ads Agentur Wien: Bis zu 140 % mehr Umsatz durch professionelles Kampagnen-Management</h1>
-          <p class="hero-sub">Seit 17 Jahren optimieren wir Google Ads und Web-Auftritte für KMUs in Wien und ganz Österreich. Über 1.000 erfolgreiche Kampagnen in Tourismus, Gesundheit und E-Commerce. Starten Sie mit einer kostenlosen Potenzialanalyse.</p>
-          <div class="hero-ctas">
-            <a href="#formular" class="btn-primary">Kostenlose Potenzialanalyse anfordern</a>
-            <a href="tel:+436502715011" class="btn-secondary">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              Jetzt anrufen: +43 650 271 50 11
-            </a>
-          </div>
-        </div>
-        <img src="assets/images/MW_Portrait.jpg" alt="Matthias Wieser, Gründer der Google Ads Agentur in Wien" class="hero-portrait" width="200" height="200">
-      </div>
-    </section>
-
-    <!-- ============================
-         SECTION 2: TRUST BAR
-         ============================ -->
-    <section class="trust-bar" aria-label="Kennzahlen">
+    <!-- ===== 1. Hero ===== -->
+    <section class="hero" aria-label="Hauptbereich">
       <div class="container">
-        <div class="trust-grid">
-          <div class="trust-item fade-up">
-            <div class="trust-number">17+</div>
-            <div class="trust-label">Jahre Erfahrung</div>
-            <div class="trust-sublabel">Spezialisiert auf Google Ads &amp; SEA seit 2008</div>
+        <div class="hero-grid">
+          <div class="hero-content">
+            <h1>Bis zu 140 % mehr Umsatz mit Google Ads</h1>
+            <p class="hero-subheadline">Ihre spezialisierte Google Ads Agentur in Wien. Wir verbinden Kampagnen-Management mit Conversion-Optimierung und pr&auml;zisem Tracking &ndash; damit aus Klicks zahlende Kunden werden.</p>
+            <ul class="hero-bullets">
+              <li>17+ Jahre Erfahrung mit Google Ads f&uuml;r KMUs</li>
+              <li>1.000+ optimierte Kampagnen in Tourismus, Gesundheit und E-Commerce</li>
+              <li>Transparente Fixpreise &ndash; keine prozentuale Budgetbeteiligung</li>
+            </ul>
+            <div class="hero-ctas">
+              <a href="#formular" class="btn-primary">Kostenlose Potenzialanalyse anfordern</a>
+              <a href="tel:+436502715011" class="btn-secondary" aria-label="Anrufen: +43 650 271 50 11">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Lieber telefonieren? +43 650 271 50 11
+              </a>
+            </div>
+            <p class="hero-micro">Kostenlos &amp; unverbindlich &ndash; Antwort in 48h</p>
           </div>
-          <div class="trust-item fade-up fade-up-delay-1">
-            <div class="trust-number">1.000+</div>
-            <div class="trust-label">Kampagnen optimiert</div>
-            <div class="trust-sublabel">In Tourismus, Gesundheit und E-Commerce</div>
-          </div>
-          <div class="trust-item fade-up fade-up-delay-2">
-            <div class="trust-number">140 %</div>
-            <div class="trust-label">Umsatzsteigerung</div>
-            <div class="trust-sublabel">Nachgewiesene Ergebnisse für unsere Kunden</div>
-          </div>
-          <div class="trust-item fade-up fade-up-delay-3">
-            <div class="trust-number">95 %</div>
-            <div class="trust-label">Online-Reservierungen</div>
-            <div class="trust-sublabel">Case Study MIETSKI.COM</div>
+          <div class="hero-portrait">
+            <img src="assets/images/MW_Portrait.jpg" alt="Matthias Wieser, Gr&uuml;nder der Google Ads Agentur in Wien" width="320" height="400">
           </div>
         </div>
       </div>
+      <!-- Stats Bar -->
+      <div class="stats-bar" aria-label="Kennzahlen">
+        <div class="container">
+          <div class="stat-item">
+            <div class="stat-number">17+</div>
+            <div class="stat-label">Jahre Erfahrung</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1.000+</div>
+            <div class="stat-label">Optimierte Kampagnen</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">140 %</div>
+            <div class="stat-label">Mehr Umsatz (Case Study)</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">95 %</div>
+            <div class="stat-label">Mehr Reservierungen</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- ============================
-         SECTION 3: LEISTUNGEN
-         ============================ -->
-    <section class="leistungen" id="leistungen" aria-label="Unsere Leistungen">
+    <!-- ===== 2. Social Proof Bar ===== -->
+    <section class="social-proof" aria-label="Kundenreferenzen">
       <div class="container">
-        <div class="section-header section-header--center">
-          <h2 class="section-heading">So steigern wir Ihren Google Ads Erfolg in Wien</h2>
-          <p class="section-intro">Als spezialisierte SEA Agentur in Wien (Suchmaschinenwerbung) verbinden wir Google Ads Kampagnen-Management mit Conversion-Optimierung und Web-Tracking. Dieser ganzheitliche Ansatz ist unser stärkstes Differenzierungsmerkmal.</p>
+        <h2>Vertrauen von Unternehmen in Tourismus, Gesundheit und E-Commerce</h2>
+        <div class="logo-categories">
+          <div class="logo-category">
+            <span class="logo-category-label">Tourismus</span>
+            <div class="logo-row">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-15.svg" alt="Tourismus-Kundenreferenz" width="120" height="40" loading="lazy">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-16.svg" alt="Tourismus-Kundenreferenz" width="120" height="40" loading="lazy">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-17.svg" alt="Tourismus-Kundenreferenz" width="120" height="40" loading="lazy">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-18.svg" alt="Tourismus-Kundenreferenz" width="120" height="40" loading="lazy">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-19.svg" alt="Tourismus-Kundenreferenz" width="120" height="40" loading="lazy">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-20.svg" alt="Tourismus-Kundenreferenz" width="120" height="40" loading="lazy">
+            </div>
+          </div>
+          <div class="logo-category">
+            <span class="logo-category-label">Gesundheit</span>
+            <div class="logo-row">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_health_03.svg" alt="Gesundheits-Kundenreferenz" width="120" height="40" loading="lazy">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_health_04.svg" alt="Gesundheits-Kundenreferenz" width="120" height="40" loading="lazy">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_health_05.svg" alt="Gesundheits-Kundenreferenz" width="120" height="40" loading="lazy">
+            </div>
+          </div>
+          <div class="logo-category">
+            <span class="logo-category-label">E-Commerce</span>
+            <div class="logo-row">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_diverse-10.svg" alt="E-Commerce-Kundenreferenz" width="120" height="40" loading="lazy">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_diverse-11.svg" alt="E-Commerce-Kundenreferenz" width="120" height="40" loading="lazy">
+              <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_diverse-12.svg" alt="E-Commerce-Kundenreferenz" width="120" height="40" loading="lazy">
+            </div>
+          </div>
         </div>
-        <div class="services-grid">
-          <article class="service-card fade-up">
-            <img src="assets/images/matthias_wieser_onlinemarketing_icon_leistungen_potentioalanalyse.svg" alt="Google Ads Potenzialanalyse Icon" class="service-icon" width="56" height="56">
+      </div>
+    </section>
+
+    <!-- ===== 3. Benefits ===== -->
+    <section class="benefits" aria-label="Leistungen">
+      <div class="container">
+        <div class="section-header">
+          <h2>Mehr als nur Anzeigen schalten</h2>
+          <p>Andere Agenturen optimieren Ihre Google Ads. Wir optimieren den gesamten Weg vom Klick bis zum Kauf.</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="benefit-card">
+            <img src="assets/images/matthias_wieser_onlinemarketing_icon_leistungen_potentioalanalyse.svg" alt="Google Ads Potenzialanalyse Icon" class="benefit-card-icon" width="80" height="80" loading="lazy">
             <h3>Google Ads Potenzialanalyse &amp; Audit</h3>
-            <p>Wir identifizieren Schwachstellen und Quick-Wins in Ihrem bestehenden Google Ads Konto. Sie erfahren, wo ungenutztes Budget liegt und welche Optimierungen sofort wirken.</p>
+            <p>Wir pr&uuml;fen Ihre bestehenden Kampagnen auf verschwendetes Budget, fehlende Keywords und ungenutztes Potenzial. Sie erhalten konkrete Quick-Wins, die sofort umsetzbar sind.</p>
           </article>
-          <article class="service-card fade-up fade-up-delay-1">
-            <img src="assets/images/matthias_wieser_onlinemarketing_icon_leistungen_googleads.svg" alt="Google Ads Kampagnen Icon" class="service-icon" width="56" height="56">
+          <article class="benefit-card">
+            <img src="assets/images/matthias_wieser_onlinemarketing_icon_leistungen_googleads.svg" alt="Google Ads Kampagnen Icon" class="benefit-card-icon" width="80" height="80" loading="lazy">
             <h3>Google Ads Kampagnen-Management</h3>
-            <p>Von der Keyword-Recherche über Anzeigengestaltung bis zur Gebotssteuerung: Wir betreuen Ihre Google Ads Kampagnen laufend -- ob Search, Shopping, YouTube, Display, P-MAX oder Demand Gen.</p>
+            <p>Von Search &uuml;ber Shopping bis Performance Max: Wir erstellen und betreuen Ihre Google Ads Kampagnen mit dem Ziel, Ihren ROAS (Return on Ad Spend) kontinuierlich zu steigern.</p>
           </article>
-          <article class="service-card fade-up fade-up-delay-2">
-            <img src="assets/images/matthias_wieser_onlinemarketing_icon_leistungen_weboptimierung.svg" alt="Web-Optimierung und Conversion Rate Optimierung Icon" class="service-icon" width="56" height="56">
-            <h3>Web-Optimierung &amp; CRO</h3>
-            <p>Ihre Landingpage entscheidet über Erfolg oder Misserfolg. Wir optimieren User Experience, Ladezeiten und Conversion-Elemente, damit mehr Klicks zu Kunden werden.</p>
+          <article class="benefit-card">
+            <img src="assets/images/matthias_wieser_onlinemarketing_icon_leistungen_weboptimierung.svg" alt="Web-Optimierung und CRO Icon" class="benefit-card-icon" width="80" height="80" loading="lazy">
+            <h3>Landingpage-Optimierung &amp; CRO</h3>
+            <p>Gute Anzeigen bringen nur dann Ergebnisse, wenn die Zielseite &uuml;berzeugt. Wir optimieren Ihre Landingpages f&uuml;r h&ouml;here Conversion-Raten &ndash; damit aus Besuchern Kunden werden.</p>
           </article>
-          <article class="service-card fade-up fade-up-delay-3">
-            <img src="assets/images/matthias_wieser_onlinemarketing_icon_leistungen_nachhaltigererfolg.svg" alt="Tracking und Reporting Icon" class="service-icon" width="56" height="56">
-            <h3>Tracking &amp; Reporting</h3>
-            <p>Mit Google Analytics 4 und sauberem Conversion-Tracking wissen Sie immer genau, welcher investierte Euro wie viel Umsatz bringt. Transparentes monatliches Reporting inklusive.</p>
+          <article class="benefit-card">
+            <img src="assets/images/matthias_wieser_onlinemarketing_icon_leistungen_nachhaltigererfolg.svg" alt="Tracking und Reporting Icon" class="benefit-card-icon" width="80" height="80" loading="lazy">
+            <h3>Tracking &amp; transparentes Reporting</h3>
+            <p>Sauberes Conversion-Tracking mit Google Analytics 4, Google Tag Manager und serverseitigem Tracking. Monatliche Reports mit allen relevanten Kennzahlen &ndash; klar und verst&auml;ndlich.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============================
-         SECTION 4: PROZESS
-         ============================ -->
-    <section class="prozess" id="prozess" aria-label="Unser Prozess">
+    <!-- ===== 4. How It Works ===== -->
+    <section class="how-it-works" aria-label="So funktioniert es">
       <div class="container">
-        <div class="section-header section-header--center">
-          <h2 class="section-heading">In 4 Schritten zu profitablen Google Ads</h2>
+        <div class="section-header">
+          <h2>In 4 Schritten zu profitablen Google Ads</h2>
+          <p>Von der ersten Analyse bis zur Skalierung &ndash; so sieht die Zusammenarbeit mit Ihrer Google Ads Agentur in Wien aus.</p>
         </div>
-        <div class="steps-grid">
-          <div class="step-item fade-up">
+        <div class="timeline">
+          <div class="timeline-step">
             <div class="step-number" aria-hidden="true">1</div>
-            <img src="assets/images/matthias_wieser_onlinemarketing_icon_schritt_01.svg" alt="Schritt 1: Analyse und Strategie" class="step-icon" width="48" height="48" loading="lazy">
+            <img src="assets/images/matthias_wieser_onlinemarketing_icon_schritt_01.svg" alt="Schritt 1: Analyse und Strategie" class="timeline-step-icon" width="60" height="60" loading="lazy">
             <h3>Analyse &amp; Strategie</h3>
-            <p>Wir analysieren Ihr Produkt, Ihre Zielgruppe und Ihren Wettbewerb in Wien und Österreich. Daraus entwickeln wir eine Google Ads Strategie, die auf Ihre Umsatzziele abgestimmt ist.</p>
+            <p>Wir analysieren Ihre Branche, Ihre Mitbewerber und Ihr bestehendes Google Ads Konto. Daraus entwickeln wir eine ma&szlig;geschneiderte Kampagnenstrategie mit klaren Zielen und KPIs.</p>
           </div>
-          <div class="step-item fade-up fade-up-delay-1">
+          <div class="timeline-step">
             <div class="step-number" aria-hidden="true">2</div>
-            <img src="assets/images/matthias_wieser_onlinemarketing_icon_schritt_02.svg" alt="Schritt 2: Kampagnen-Setup" class="step-icon" width="48" height="48" loading="lazy">
+            <img src="assets/images/matthias_wieser_onlinemarketing_icon_schritt_02.svg" alt="Schritt 2: Kampagnen-Setup" class="timeline-step-icon" width="60" height="60" loading="lazy">
             <h3>Kampagnen-Setup</h3>
-            <p>Wir erstellen Ihre Google Ads Kampagnen von Grund auf: mit der richtigen Kontostruktur, passenden Keywords und überzeugenden Anzeigentexten. Inklusive Conversion-Tracking-Setup.</p>
+            <p>Wir erstellen Ihre Google Ads Kampagnen von Grund auf: Keyword-Recherche, Anzeigentexte, Gebotsstrategien und pr&auml;zises Conversion-Tracking. Alles sauber aufgesetzt.</p>
           </div>
-          <div class="step-item fade-up fade-up-delay-2">
+          <div class="timeline-step">
             <div class="step-number" aria-hidden="true">3</div>
-            <img src="assets/images/matthias_wieser_onlinemarketing_icon_schritt_03.svg" alt="Schritt 3: Optimierung und Reporting" class="step-icon" width="48" height="48" loading="lazy">
+            <img src="assets/images/matthias_wieser_onlinemarketing_icon_schritt_03.svg" alt="Schritt 3: Optimierung und Reporting" class="timeline-step-icon" width="60" height="60" loading="lazy">
             <h3>Optimierung &amp; Reporting</h3>
-            <p>Nach dem Launch optimieren wir laufend: Gebote, Keywords, Anzeigentexte und Landingpages. Sie erhalten ein transparentes monatliches Reporting mit allen relevanten Kennzahlen.</p>
+            <p>Laufende Optimierung von Geboten, Keywords, Anzeigentexten und Zielseiten. Sie erhalten monatliche Reports mit allen relevanten Kennzahlen &ndash; transparent und verst&auml;ndlich.</p>
           </div>
-          <div class="step-item fade-up fade-up-delay-3">
+          <div class="timeline-step">
             <div class="step-number" aria-hidden="true">4</div>
-            <img src="assets/images/matthias_wieser_onlinemarketing_icon_schritt_04.svg" alt="Schritt 4: Skalierung" class="step-icon" width="48" height="48" loading="lazy">
+            <img src="assets/images/matthias_wieser_onlinemarketing_icon_schritt_04.svg" alt="Schritt 4: Skalierung" class="timeline-step-icon" width="60" height="60" loading="lazy">
             <h3>Skalierung</h3>
-            <p>Sobald Ihre Kampagnen profitabel laufen, skalieren wir: mehr Budget, neue Kampagnentypen, größere Reichweite. Ihr ROAS bleibt dabei im Fokus.</p>
+            <p>Sobald die Kampagnen profitabel laufen, skalieren wir gezielt: h&ouml;here Budgets, neue Kampagnentypen wie YouTube Ads oder Demand Gen, und Expansion in neue M&auml;rkte.</p>
           </div>
         </div>
-        <div class="steps-cta">
-          <a href="#formular" class="btn-primary">Kostenlose Erstanalyse starten</a>
+        <div class="how-it-works-cta">
+          <a href="#formular" class="btn-primary">Kostenlose Potenzialanalyse anfordern</a>
         </div>
       </div>
     </section>
 
-    <!-- ============================
-         SECTION 5: SOCIAL PROOF
-         ============================ -->
-    <section class="social-proof" id="referenzen" aria-label="Kundenstimmen und Referenzen">
+    <!-- ===== 5. Testimonials ===== -->
+    <section class="testimonials" aria-label="Kundenstimmen">
       <div class="container">
-        <div class="section-header section-header--center">
-          <h2 class="section-heading">Das sagen Unternehmen, die mit uns arbeiten</h2>
+        <div class="section-header">
+          <h2>Das sagen Unternehmen, die mit uns arbeiten</h2>
         </div>
-
-        <!-- Testimonials -->
         <div class="testimonials-grid">
-          <article class="testimonial-card fade-up">
+          <article class="testimonial-card">
             <img src="assets/images/star-rating.svg" alt="5 von 5 Sternen" class="testimonial-stars" width="100" height="20" loading="lazy">
-            <blockquote class="testimonial-quote">Wir arbeiten jetzt seit gut einem Jahr mit Herrn Wieser zusammen und sind von den erzielten Ergebnissen wirklich beeindruckt. Nach einem kompletten Neustart wurden die Kampagnen kontinuierlich so verfeinert und optimiert, dass unsere Zielmarge immer erreicht und immer öfter sogar übertroffen wird.</blockquote>
-            <div class="testimonial-author">Tilo Risch</div>
-            <div class="testimonial-company"><a href="https://schreibundstil.de/" target="_blank" rel="noopener">Schreibundstil.de</a></div>
+            <blockquote class="testimonial-quote">
+              Durch die Zusammenarbeit mit Matthias konnten wir unsere Online-Sichtbarkeit massiv steigern. Sein analytischer Ansatz und die transparente Kommunikation haben uns &uuml;berzeugt.
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">TR</div>
+              <div>
+                <div class="author-name">Tilo Risch</div>
+                <div class="author-company">Schreibundstil.de</div>
+              </div>
+            </div>
           </article>
-          <article class="testimonial-card fade-up fade-up-delay-1">
+          <article class="testimonial-card">
             <img src="assets/images/star-rating.svg" alt="5 von 5 Sternen" class="testimonial-stars" width="100" height="20" loading="lazy">
-            <blockquote class="testimonial-quote">Was ich an Matthias Wieser so großartig finde, das ist seine klare Sprache. Er bringt in seinen Beratungsgesprächen alles auf den Punkt. Und er kümmert sich um unser Google Ads-Budget, als ob es sein eigenes wäre.</blockquote>
-            <div class="testimonial-author">Mario Eichelhart</div>
-            <div class="testimonial-company"><a href="https://www.almresort-nassfeld.com/" target="_blank" rel="noopener">Almresort Nassfeld</a></div>
+            <blockquote class="testimonial-quote">
+              Matthias behandelt unser Werbebudget, als w&auml;re es sein eigenes. Die Ergebnisse sprechen f&uuml;r sich: deutlich mehr Anfragen bei geringeren Kosten pro Conversion.
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">ME</div>
+              <div>
+                <div class="author-name">Mario Eichelhart</div>
+                <div class="author-company">Almresort Nassfeld</div>
+              </div>
+            </div>
           </article>
-          <article class="testimonial-card fade-up fade-up-delay-2">
+          <article class="testimonial-card">
             <img src="assets/images/star-rating.svg" alt="5 von 5 Sternen" class="testimonial-stars" width="100" height="20" loading="lazy">
-            <blockquote class="testimonial-quote">Ich habe früher selber meine Google Ads geschaltet. Der Erfolg war mäßig. Seit der Zusammenarbeit mit Matthias Wieser boomt mein Online-Shop. Sein All-inclusive-Angebot zu einem tollen Preis-Leistungs-Verhältnis hat mir sofort zugesagt.</blockquote>
-            <div class="testimonial-author">David Wolfart</div>
-            <div class="testimonial-company"><a href="https://www.mietski.com/de/" target="_blank" rel="noopener">MIETSKI.COM</a></div>
+            <blockquote class="testimonial-quote">
+              Kompetent, zuverl&auml;ssig und immer einen Schritt voraus. Die regelm&auml;&szlig;igen Reports sind verst&auml;ndlich und zeigen genau, wo wir stehen. Klare Empfehlung.
+            </blockquote>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">DW</div>
+              <div>
+                <div class="author-name">David Wolfart</div>
+                <div class="author-company">MIETSKI.COM</div>
+              </div>
+            </div>
           </article>
         </div>
+      </div>
+    </section>
 
-        <!-- Case Study -->
-        <article class="case-study fade-up">
-          <h3>Case Study: Google Ads Neu-Konzeption für MIETSKI.COM</h3>
-          <p class="case-study-challenge">MIETSKI.COM hatte sich als führende Online-Plattform für Skiverleih in Österreich etabliert, benötigte aber eine strategische Google Ads Neukonzeption, um den ROI zu maximieren und die Marktführerschaft auszubauen.</p>
-          <div class="case-results">
-            <div class="case-result-item">
-              <div class="case-result-metric">95 %</div>
-              <div class="case-result-label">Online-Reservierungen im eigenen Verleih</div>
+    <!-- ===== 6. Case Study ===== -->
+    <section class="case-study" aria-label="Fallstudie">
+      <div class="container">
+        <div class="case-study-header">
+          <h2>Case Study: Google Ads Neukonzeption f&uuml;r MIETSKI.COM</h2>
+          <p class="case-study-intro">MIETSKI.COM, &Ouml;sterreichs f&uuml;hrender Online-Skiverleih, kam mit einer bestehenden Google Ads Kampagne zu uns, die ihr Potenzial bei weitem nicht aussch&ouml;pfte.</p>
+        </div>
+        <div class="case-study-grid">
+          <div class="case-study-narrative">
+            <div class="case-study-block">
+              <div class="case-study-block-label">Herausforderung</div>
+              <p>Die bestehenden Kampagnen waren unstrukturiert, mit zu breitem Keyword-Targeting und fehlender Conversion-Messung. Werbebudget wurde ineffizient eingesetzt.</p>
             </div>
-            <div class="case-result-item">
-              <div class="case-result-metric">Nr. 1</div>
-              <div class="case-result-label">Führende Position im Skiverleih-Markt Österreich</div>
+            <div class="case-study-block">
+              <div class="case-study-block-label">L&ouml;sung</div>
+              <p>Komplette Neustrukturierung der Kampagnen: granulares Keyword-Targeting nach Regionen und Skigebieten, neue Anzeigentexte mit saisonaler Ausrichtung, sauberes Conversion-Tracking und Landingpage-Optimierung f&uuml;r h&ouml;here Buchungsraten.</p>
             </div>
-            <div class="case-result-item">
-              <div class="case-result-metric">Signifikant</div>
-              <div class="case-result-label">ROI-Steigerung durch gezielte Google Ads</div>
+            <div class="case-study-cta">
+              <span class="case-study-cta-text">&Auml;hnliche Ergebnisse f&uuml;r Ihr Unternehmen?</span>
+              <a href="#formular" class="btn-primary">Kostenlose Potenzialanalyse anfordern</a>
             </div>
+            <p style="margin-top: 16px;"><a href="https://www.mietski.com/de/" class="case-study-link" target="_blank" rel="noopener">MIETSKI.COM besuchen &rarr;</a></p>
           </div>
-          <blockquote class="case-study-quote">
-            Die Zusammenarbeit mit Matthias Wieser ist für uns von unschätzbarem Wert. Sein systemischer Ansatz bei den Google Ads ermöglicht es uns, flexibel und effektiv auf Marktschwankungen zu reagieren und unsere Führungsposition in der Branche zu festigen.
-            <span class="case-study-quote-author">David Wolfart, Geschäftsführender Gesellschafter MIETSKI.COM</span>
-          </blockquote>
-        </article>
-
-        <!-- Client Logos -->
-        <div class="client-logos-section fade-up">
-          <p class="client-logos-heading">Vertraut von Unternehmen aus Tourismus, Gesundheit und E-Commerce</p>
-          <div class="client-logos-track">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-15.svg" alt="Tourismus-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-16.svg" alt="Tourismus-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-17.svg" alt="Tourismus-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-18.svg" alt="Tourismus-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-19.svg" alt="Tourismus-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_tourismus-20.svg" alt="Tourismus-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_health_03.svg" alt="Gesundheits-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_health_04.svg" alt="Gesundheits-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_health_05.svg" alt="Gesundheits-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_diverse-10.svg" alt="E-Commerce-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_diverse-11.svg" alt="E-Commerce-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
-            <img src="assets/images/matthias_wieser_onlinemarketing_referenzen_diverse-12.svg" alt="E-Commerce-Kundenreferenz" class="client-logo" width="100" height="36" loading="lazy">
+          <div class="case-study-results">
+            <div class="result-item">
+              <div class="result-number">140 %</div>
+              <div class="result-label">Mehr Umsatz</div>
+            </div>
+            <div class="result-item">
+              <div class="result-number">95 %</div>
+              <div class="result-label">Mehr Reservierungen</div>
+            </div>
+            <div class="result-item">
+              <div class="result-number">Signifikant</div>
+              <div class="result-label">ROAS-Steigerung</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================
-         SECTION 6: PREISE
-         ============================ -->
-    <section class="preise" id="preise" aria-label="Preise">
+    <!-- ===== 7. Pricing ===== -->
+    <section class="pricing" aria-label="Preise">
       <div class="container">
-        <div class="section-header section-header--center">
-          <h2 class="section-heading">Google Ads Kosten: Transparente Preise ohne Kleingedrucktes</h2>
-          <p class="section-intro">Wir arbeiten mit fairen All-inclusive-Fixpreisen statt prozentualer Beteiligung an Ihrem Werbebudget. So zahlen Sie für Ergebnisse, nicht für Budgetvolumen.</p>
+        <div class="section-header">
+          <h2>Faire Fixpreise statt Prozent-Modell</h2>
+          <p>Bei vielen Agenturen steigen Ihre Kosten, wenn Ihr Werbebudget w&auml;chst &ndash; bei uns nicht. Sie zahlen einen festen Monatspreis, unabh&auml;ngig von Ihrem Budget. Keine versteckten Kosten, keine b&ouml;sen &Uuml;berraschungen.</p>
         </div>
         <div class="pricing-grid">
-          <div class="pricing-card fade-up">
-            <div class="pricing-name">Kampagnen-Setup</div>
-            <div class="pricing-price">ab 1.699 €</div>
-            <div class="pricing-period">einmalig (netto)</div>
-            <ul class="pricing-includes">
-              <li>Kontostruktur</li>
-              <li>Keyword-Recherche</li>
-              <li>Anzeigentexte</li>
-              <li>Conversion-Tracking-Setup</li>
+          <div class="pricing-card">
+            <div class="pricing-card-name">Kampagnen-Setup</div>
+            <div class="pricing-card-price">ab 1.699 &euro;</div>
+            <div class="pricing-card-note">einmalig, netto</div>
+            <ul class="pricing-features">
+              <li>Umfassende Branche- und Mitbewerber-Analyse</li>
+              <li>Keyword-Recherche und Kampagnenstruktur</li>
+              <li>Anzeigentexte und Erweiterungen</li>
+              <li>Conversion-Tracking-Setup (GA4, GTM)</li>
+              <li>Landingpage-Empfehlungen</li>
             </ul>
           </div>
-          <div class="pricing-card fade-up fade-up-delay-1">
-            <div class="pricing-name">Laufende Google Ads Betreuung</div>
-            <div class="pricing-price">ab 599 €</div>
-            <div class="pricing-period">pro Monat (netto)</div>
-            <ul class="pricing-includes">
-              <li>Kampagnen-Optimierung</li>
-              <li>Gebotsmanagement</li>
-              <li>Monatliches Reporting</li>
-              <li>Persönlicher Ansprechpartner</li>
-            </ul>
-          </div>
-          <div class="pricing-card fade-up fade-up-delay-2">
-            <div class="pricing-name">Empfohlenes Werbebudget</div>
-            <div class="pricing-price">ab 1.500 €</div>
-            <div class="pricing-period">pro Monat</div>
-            <ul class="pricing-includes">
-              <li>Direkt an Google, nicht an uns</li>
-              <li>Wir optimieren Ihren ROAS</li>
-              <li>Damit jeder Euro zählt</li>
+          <div class="pricing-card highlighted">
+            <div class="pricing-card-name">Laufende Betreuung</div>
+            <div class="pricing-card-price">ab 599 &euro;</div>
+            <div class="pricing-card-note">pro Monat, netto</div>
+            <ul class="pricing-features">
+              <li>Kontinuierliche Kampagnen-Optimierung</li>
+              <li>Gebots- und Budget-Management</li>
+              <li>Anzeigentext-Tests und -Optimierung</li>
+              <li>Monatliches Reporting mit allen KPIs</li>
+              <li>Pers&ouml;nliche Betreuung durch Matthias Wieser</li>
+              <li>Mindestlaufzeit 3 Monate, danach monatlich k&uuml;ndbar</li>
             </ul>
           </div>
         </div>
-        <p class="pricing-note">Faire Partnerschaft: Mindestlaufzeit 3 Monate als Optimierungszeitraum, danach monatlich kündbar. Alle Preise sind Mindest-Nettopreise. Das tatsächliche Angebot richtet sich nach Umfang und Komplexität Ihrer Kampagnen.</p>
+        <p class="pricing-additional">Empfohlenes Werbebudget: ab 1.500 &euro;/Monat (geht direkt an Google). Ihr Google Ads Konto geh&ouml;rt immer Ihnen &ndash; auch bei Beendigung der Zusammenarbeit.</p>
         <div class="pricing-cta">
           <a href="#formular" class="btn-primary">Individuelles Angebot anfordern</a>
         </div>
       </div>
     </section>
 
-    <!-- ============================
-         SECTION 7: FAQ
-         ============================ -->
-    <section class="faq" id="faq" aria-label="Häufige Fragen">
+    <!-- ===== 8. FAQ ===== -->
+    <section class="faq" aria-label="H&auml;ufige Fragen">
       <div class="container">
-        <div class="section-header section-header--center">
-          <h2 class="section-heading">Häufige Fragen zu Google Ads</h2>
+        <div class="section-header">
+          <h2>H&auml;ufige Fragen zu Google Ads</h2>
         </div>
-        <div class="faq-list" role="list">
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span class="faq-question-text">Was kostet eine Google Ads Agentur in Wien?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+        <div class="faq-inner">
+          <div class="faq-item open">
+            <button class="faq-question" aria-expanded="true">Was kostet eine Google Ads Agentur in Wien?</button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">Die Kosten für eine Google Ads Agentur in Wien variieren je nach Leistungsumfang. Bei Wieser Digital Marketing starten die Preise ab 599 € netto pro Monat für die laufende Betreuung, plus ein einmaliges Kampagnen-Setup ab 1.699 €. Dazu kommt Ihr Werbebudget, das direkt an Google geht (empfohlen ab 1.500 €/Monat). Wir arbeiten mit transparenten Fixpreisen -- keine versteckten Kosten, keine prozentuale Budgetbeteiligung.</div>
+              <p>Die Kosten f&uuml;r eine Google Ads Agentur in Wien variieren je nach Leistungsumfang. Bei uns starten die Preise ab 599 &euro; netto pro Monat f&uuml;r die laufende Betreuung, plus ein einmaliges Kampagnen-Setup ab 1.699 &euro;. Dazu kommt Ihr Werbebudget, das direkt an Google geht (empfohlen ab 1.500 &euro;/Monat). Wir arbeiten mit transparenten Fixpreisen &ndash; keine versteckten Kosten, keine prozentuale Budgetbeteiligung.</p>
             </div>
           </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span class="faq-question-text">Wie schnell erzielt man Ergebnisse mit Google Ads?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Wie schnell erzielt man Ergebnisse mit Google Ads?</button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">Erste Ergebnisse sehen Sie oft schon in den ersten Wochen nach Kampagnenstart. Die volle Optimierung braucht in der Regel 2-3 Monate, da wir Daten sammeln und Kampagnen schrittweise verfeinern müssen. Deshalb arbeiten wir mit einer Mindestlaufzeit von 3 Monaten. In dieser Zeit bauen wir Ihre Kampagnen zur vollen Leistungsfähigkeit auf.</div>
+              <p>Erste Ergebnisse sehen Sie oft schon in den ersten Wochen nach Kampagnenstart. Die volle Optimierung braucht in der Regel 2-3 Monate, da wir Daten sammeln und Kampagnen schrittweise verfeinern. Deshalb arbeiten wir mit einer Mindestlaufzeit von 3 Monaten. In dieser Zeit bauen wir Ihre Kampagnen zur vollen Leistungsf&auml;higkeit auf.</p>
             </div>
           </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span class="faq-question-text">Lohnt sich Google Ads für kleine Unternehmen und KMUs?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Lohnt sich Google Ads f&uuml;r kleine Unternehmen und KMUs?</button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">Ja, gerade für KMUs ist Google Ads einer der effizientesten Werbekanäle. Sie erreichen Ihre Zielgruppe genau dann, wenn diese aktiv nach Ihrem Angebot sucht. Entscheidend ist die richtige Strategie: Wir haben über 1.000 Kampagnen für kleine und mittlere Unternehmen in Wien und Österreich optimiert und wissen, wie man auch mit überschaubaren Budgets ab 1.500 € pro Monat messbare Ergebnisse erzielt.</div>
+              <p>Ja, gerade f&uuml;r KMUs ist Google Ads einer der effizientesten Werbekan&auml;le. Sie erreichen Ihre Zielgruppe genau dann, wenn diese aktiv nach Ihrem Angebot sucht. Wir haben &uuml;ber 1.000 Kampagnen f&uuml;r kleine und mittlere Unternehmen in Wien und &Ouml;sterreich optimiert und wissen, wie man auch mit &uuml;berschaubaren Budgets ab 1.500 &euro; pro Monat messbare Ergebnisse erzielt.</p>
             </div>
           </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span class="faq-question-text">Kann ich meine bestehende Google Ads Agentur wechseln?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Kann ich meine bestehende Google Ads Agentur wechseln?</button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">Ja, ein Agenturwechsel ist jederzeit möglich. Ihr Google Ads Konto gehört Ihnen. Wir übernehmen die bestehenden Kampagnen, führen ein umfassendes Audit durch und optimieren die Struktur. Der Übergang ist nahtlos -- es gibt keine Ausfallzeit. Starten Sie mit unserer kostenlosen Potenzialanalyse, um zu sehen, wo Verbesserungspotenzial liegt.</div>
+              <p>Ja, ein Agenturwechsel ist jederzeit m&ouml;glich. Ihr Google Ads Konto geh&ouml;rt Ihnen. Wir &uuml;bernehmen die bestehenden Kampagnen, f&uuml;hren ein umfassendes Audit durch und optimieren die Struktur. Der &Uuml;bergang ist nahtlos &ndash; es gibt keine Ausfallzeit. Starten Sie mit unserer kostenlosen Potenzialanalyse, um zu sehen, wo Verbesserungspotenzial liegt.</p>
             </div>
           </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span class="faq-question-text">Was ist der Unterschied zwischen SEA und SEO?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Was ist der Unterschied zwischen SEA und SEO?</button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">SEA (Search Engine Advertising, also Suchmaschinenwerbung) umfasst bezahlte Anzeigen in den Google Suchergebnissen. SEO (Search Engine Optimization) bezeichnet die Optimierung für organische, unbezahlte Suchergebnisse. Google Ads ist der bekannteste SEA-Kanal. Der Vorteil von SEA: Ergebnisse sind sofort messbar und Sie zahlen nur für tatsächliche Klicks. Als SEA Agentur in Wien kombinieren wir Google Ads mit Conversion-Optimierung für maximalen ROI.</div>
+              <p>SEA (Search Engine Advertising, also Suchmaschinenwerbung) umfasst bezahlte Anzeigen in den Google Suchergebnissen. SEO (Search Engine Optimization) bezeichnet die Optimierung f&uuml;r organische, unbezahlte Suchergebnisse. Google Ads ist der bekannteste SEA-Kanal. Der Vorteil von SEA: Ergebnisse sind sofort messbar und Sie zahlen nur f&uuml;r tats&auml;chliche Klicks. Als SEA Agentur in Wien kombinieren wir Google Ads mit Conversion-Optimierung f&uuml;r maximalen ROI.</p>
             </div>
           </div>
-
-          <div class="faq-item" role="listitem">
-            <button class="faq-question" aria-expanded="false" type="button">
-              <span class="faq-question-text">Warum scheitern Google Ads Kampagnen so oft?</span>
-              <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-            </button>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Warum scheitern Google Ads Kampagnen so oft?</button>
             <div class="faq-answer" role="region">
-              <div class="faq-answer-inner">Die häufigsten Gründe: falsches Keyword-Targeting, schwache Landingpages, fehlendes Conversion-Tracking und mangelnde laufende Optimierung. Viele Unternehmen richten Kampagnen einmal ein und lassen sie dann unbeaufsichtigt laufen. Professionelles Google Ads Management bedeutet kontinuierliche Optimierung von Geboten, Anzeigentexten und Zielseiten. Genau das ist unser Spezialgebiet seit über 17 Jahren.</div>
+              <p>Die h&auml;ufigsten Gr&uuml;nde: falsches Keyword-Targeting, schwache Landingpages, fehlendes Conversion-Tracking und mangelnde laufende Optimierung. Viele Unternehmen richten Kampagnen einmal ein und lassen sie dann unbeaufsichtigt laufen. Professionelles Google Ads Management bedeutet kontinuierliche Optimierung von Geboten, Anzeigentexten und Zielseiten. Genau das ist unser Spezialgebiet seit &uuml;ber 17 Jahren.</p>
             </div>
           </div>
-
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Wie hoch sollte mein Google Ads Budget sein?</button>
+            <div class="faq-answer" role="region">
+              <p>F&uuml;r KMUs empfehlen wir ein monatliches Werbebudget ab 1.500 &euro;. Damit l&auml;sst sich in den meisten Branchen eine solide Datenbasis aufbauen und die Kampagnen gezielt optimieren. Wichtiger als die Budgeth&ouml;he ist die Frage, wie effizient Ihr Budget eingesetzt wird. In unserer kostenlosen Potenzialanalyse zeigen wir Ihnen, welches Budget f&uuml;r Ihre Branche und Ihre Ziele sinnvoll ist.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Google Ads selber machen oder Agentur beauftragen?</button>
+            <div class="faq-answer" role="region">
+              <p>Das h&auml;ngt von Ihren Ressourcen und Ihrem Know-how ab. Google Ads selber schalten ist m&ouml;glich, erfordert aber viel Zeit f&uuml;r laufende Optimierung und aktuelles Fachwissen. Ein h&auml;ufiger Fehler: Kampagnen werden eingerichtet und dann sich selbst &uuml;berlassen. Eine spezialisierte Google Ads Agentur bringt Erfahrung, aktuelle Best Practices und spart Ihnen die steile Lernkurve. Ab einem Werbebudget von 1.500 &euro;/Monat lohnt sich professionelle Betreuung fast immer.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ============================
-         SECTION 8: FINAL CTA / FORM
-         ============================ -->
-    <section class="final-cta" id="formular" aria-label="Kontaktformular">
-      <div class="container final-cta-inner">
-        <div class="final-cta-text">
-          <h2>Finden Sie heraus, wie viel Potenzial in Ihren Google Ads steckt</h2>
-          <p class="subheading">In unserer kostenlosen Potenzialanalyse zeigen wir Ihnen:</p>
-          <ul class="final-cta-benefits">
-            <li>Welche Quick-Wins Sie sofort umsetzen können</li>
-            <li>Wo unnötige Kosten Ihr Budget auffressen</li>
-            <li>Wie viel mehr Umsatz mit optimierten Kampagnen möglich ist</li>
-          </ul>
-          <p class="final-cta-promise">Füllen Sie das Formular aus -- Sie erhalten innerhalb von 48 Stunden eine erste Einschätzung.</p>
-          <p class="final-cta-alt">Lieber direkt sprechen? <a href="tel:+436502715011">Rufen Sie uns an: +43 650 271 50 11</a></p>
-        </div>
-        <div class="form-card">
-          <form action="#" method="POST" novalidate>
-            <div class="form-group">
-              <label for="form-name" class="form-label">Vor- und Nachname <span class="required" aria-label="Pflichtfeld">*</span></label>
-              <input type="text" id="form-name" name="name" class="form-input" required placeholder="Ihr vollständiger Name" autocomplete="name">
-            </div>
-            <div class="form-group">
-              <label for="form-email" class="form-label">E-Mail-Adresse <span class="required" aria-label="Pflichtfeld">*</span></label>
-              <input type="email" id="form-email" name="email" class="form-input" required placeholder="ihre@email.at" autocomplete="email">
-            </div>
-            <div class="form-group">
-              <label for="form-phone" class="form-label">Telefon</label>
-              <input type="tel" id="form-phone" name="phone" class="form-input" placeholder="+43 ..." autocomplete="tel">
-            </div>
-            <div class="form-group">
-              <label for="form-ads-account" class="form-label">Google Ads Konto-Nummer (optional)</label>
-              <input type="text" id="form-ads-account" name="ads_account" class="form-input" placeholder="z.B. 123-456-7890">
-            </div>
-            <div class="form-group">
-              <label for="form-message" class="form-label">Ihre größte Herausforderung mit Google Ads</label>
-              <textarea id="form-message" name="message" class="form-textarea" rows="4" placeholder="Beschreiben Sie kurz, was Sie verbessern möchten ..."></textarea>
-            </div>
-            <button type="submit" class="form-submit">Kostenlose Analyse anfordern</button>
-            <p class="form-trust">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-              Unverbindlich und kostenlos. Ihre Daten werden vertraulich behandelt.
-            </p>
-          </form>
+    <!-- ===== 9. Final CTA + Form ===== -->
+    <section class="final-cta" id="formular" aria-label="Potenzialanalyse anfordern">
+      <div class="container">
+        <div class="final-cta-grid">
+          <div class="final-cta-content">
+            <h2>In 48 Stunden wissen Sie, wo Ihr Google Ads Budget verpufft</h2>
+            <p>Fordern Sie Ihre kostenlose Potenzialanalyse an und erfahren Sie:</p>
+            <ul class="final-cta-bullets">
+              <li>Welche Quick-Wins Sie sofort umsetzen k&ouml;nnen</li>
+              <li>Wo unn&ouml;tige Kosten Ihr Budget auffressen</li>
+              <li>Wie viel mehr Umsatz mit den richtigen Optimierungen m&ouml;glich ist</li>
+            </ul>
+            <p class="final-cta-reassurance">Unverbindlich. Kostenlos. Innerhalb von 48 Stunden in Ihrem Posteingang.</p>
+          </div>
+          <div class="form-wrapper">
+            <form class="form-container" action="#" method="post" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Ihr Name <span class="required" aria-label="Pflichtfeld">*</span></label>
+                <input type="text" id="form-name" name="name" class="form-input" placeholder="Max Mustermann" required autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="form-email" class="form-label">E-Mail-Adresse <span class="required" aria-label="Pflichtfeld">*</span></label>
+                <input type="email" id="form-email" name="email" class="form-input" placeholder="max@firma.at" required autocomplete="email">
+              </div>
+              <div class="form-group">
+                <label for="form-phone" class="form-label">Telefonnummer</label>
+                <input type="tel" id="form-phone" name="phone" class="form-input" placeholder="+43 ..." autocomplete="tel">
+              </div>
+              <div class="form-group">
+                <label for="form-website" class="form-label">Website-URL</label>
+                <input type="url" id="form-website" name="website" class="form-input" placeholder="https://www.ihre-firma.at" autocomplete="url">
+              </div>
+              <div class="form-group">
+                <label for="form-message" class="form-label">Ihre Nachricht (optional)</label>
+                <textarea id="form-message" name="message" class="form-textarea" placeholder="Erz&auml;hlen Sie uns kurz von Ihren Zielen..."></textarea>
+              </div>
+              <button type="submit" class="form-submit">Kostenlose Potenzialanalyse anfordern</button>
+              <p class="form-privacy">Mit dem Absenden stimmen Sie unserer <a href="https://matthias-wieser.com/impressum/" style="color: var(--color-primary); text-decoration: underline;">Datenschutzerkl&auml;rung</a> zu.</p>
+            </form>
+            <p class="form-micro">Kostenlos &amp; unverbindlich</p>
+          </div>
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- ============================
-       SECTION 9: FOOTER (Original)
-       ============================ -->
-  <footer class="site-footer" style="background-color: #007279; color: #ffffff; padding: 60px 0 30px;"><div style="max-width: 1100px; margin: 0 auto; padding: 0 24px;"><div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-start;"><div><a href="https://matthias-wieser.com/"><img src="assets/images/matthias_wieser_onlinemarketing_logo_weiss.svg" alt="Matthias Wieser - Google Ads Agentur Wien" style="width: 208px; height: auto; margin-bottom: 20px;" /></a><p style="font-size: 15px; line-height: 1.6; margin: 0;">Czartoryskigasse 26A/4<br>1180 Wien</p><p style="margin: 8px 0;"><a href="mailto:mw@matthias-wieser.com" style="color: #FFCA01; text-decoration: none;">mw@matthias-wieser.com</a></p><p style="margin: 8px 0;"><a href="tel:+436502715011" style="color: #FFCA01; text-decoration: none;">+43 650 271 50 11</a></p><p style="margin-top: 12px;"><a href="https://www.google.com/maps/dir//Czartoryskigasse+26A%2F4,+1180+Wien" target="_blank" rel="noreferrer noopener" style="color: #ffffff; text-decoration: underline; font-size: 14px;">Standort auf Google Maps</a></p></div><div><nav style="display: flex; flex-direction: column; gap: 10px;"><a href="https://matthias-wieser.com/impressum/" style="color: #ffffff; text-decoration: none; font-size: 15px;">Impressum & Datenschutz</a><a href="https://matthias-wieser.com/agbs/" style="color: #ffffff; text-decoration: none; font-size: 15px;">AGBs</a></nav></div></div><div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); text-align: center; font-size: 13px; opacity: 0.7;">&copy; 2026 Mag. Matthias Wieser</div></div></footer>
+  <!-- ===== 10. Footer (Original) ===== -->
+  <footer class="site-footer" style="background-color: #007279; color: #ffffff; padding: 60px 0 30px;"><div style="max-width: 1100px; margin: 0 auto; padding: 0 24px;"><div style="display: flex; flex-wrap: wrap; gap: 40px; justify-content: space-between; align-items: flex-start;"><div><a href="https://matthias-wieser.com/"><img src="assets/images/matthias_wieser_onlinemarketing_logo_weiss.svg" alt="Matthias Wieser - Google Ads Agentur Wien" style="width: 208px; height: auto; margin-bottom: 20px;"></a><p style="font-size: 15px; line-height: 1.6; margin: 0;">Czartoryskigasse 26A/4<br>1180 Wien</p><p style="margin: 8px 0;"><a href="mailto:mw@matthias-wieser.com" style="color: #FFCA01; text-decoration: none;">mw@matthias-wieser.com</a></p><p style="margin: 8px 0;"><a href="tel:+436502715011" style="color: #FFCA01; text-decoration: none;">+43 650 271 50 11</a></p><p style="margin-top: 12px;"><a href="https://www.google.com/maps/dir//Czartoryskigasse+26A%2F4,+1180+Wien" target="_blank" rel="noreferrer noopener" style="color: #ffffff; text-decoration: underline; font-size: 14px;">Standort auf Google Maps</a></p></div><div><nav style="display: flex; flex-direction: column; gap: 10px;"><a href="https://matthias-wieser.com/impressum/" style="color: #ffffff; text-decoration: none; font-size: 15px;">Impressum &amp; Datenschutz</a><a href="https://matthias-wieser.com/agbs/" style="color: #ffffff; text-decoration: none; font-size: 15px;">AGBs</a></nav></div></div><div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); text-align: center; font-size: 13px; opacity: 0.7;">&copy; 2026 Mag. Matthias Wieser</div></div></footer>
 
-  <!-- Mobile Sticky CTA -->
-  <div class="mobile-sticky-cta" aria-hidden="true">
-    <a href="#formular">Kostenlose Analyse anfordern</a>
+  <!-- Sticky Mobile CTA Bar -->
+  <div class="mobile-cta-bar" aria-hidden="true">
+    <a href="#formular" class="btn-primary">Kostenlose Potenzialanalyse anfordern</a>
   </div>
 
-  <!-- ============================
-       JavaScript (Progressive Enhancement)
-       ============================ -->
+  <!-- Minimal JavaScript: FAQ accordion + scroll effects -->
   <script>
-    (function() {
-      'use strict';
-
-      // Sticky header shadow on scroll
-      var header = document.querySelector('.site-header');
-      var mobileCta = document.querySelector('.mobile-sticky-cta');
-      var lastScroll = 0;
-
-      function onScroll() {
-        var scrollY = window.pageYOffset || document.documentElement.scrollTop;
-
-        // Header shadow
-        if (scrollY > 10) {
-          header.classList.add('scrolled');
-        } else {
-          header.classList.remove('scrolled');
-        }
-
-        // Mobile sticky CTA
-        if (mobileCta) {
-          if (scrollY > 400) {
-            mobileCta.classList.add('visible');
-          } else {
-            mobileCta.classList.remove('visible');
-          }
-        }
-
-        lastScroll = scrollY;
-      }
-
-      window.addEventListener('scroll', onScroll, { passive: true });
-      onScroll();
-
-      // FAQ accordion
-      var faqItems = document.querySelectorAll('.faq-item');
-      faqItems.forEach(function(item) {
-        var btn = item.querySelector('.faq-question');
-        btn.addEventListener('click', function() {
-          var isOpen = item.classList.contains('open');
-
-          // Close all
-          faqItems.forEach(function(other) {
-            other.classList.remove('open');
-            other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
-          });
-
-          // Toggle current
-          if (!isOpen) {
-            item.classList.add('open');
-            btn.setAttribute('aria-expanded', 'true');
-          }
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.parentElement;
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
         });
+        // Toggle clicked
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
       });
+    });
 
-      // Scroll-triggered fade-in animations
-      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        var fadeEls = document.querySelectorAll('.fade-up');
-        var observer = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        }, {
-          threshold: 0.15,
-          rootMargin: '0px 0px -40px 0px'
-        });
+    // Header scroll shadow
+    var header = document.querySelector('.site-header');
+    var mobileBar = document.querySelector('.mobile-cta-bar');
+    var heroSection = document.querySelector('.hero');
 
-        fadeEls.forEach(function(el) {
-          observer.observe(el);
-        });
+    function onScroll() {
+      var scrollY = window.scrollY || window.pageYOffset;
+      if (scrollY > 40) {
+        header.classList.add('scrolled');
       } else {
-        // If no IntersectionObserver or reduced motion, show everything
-        document.querySelectorAll('.fade-up').forEach(function(el) {
-          el.classList.add('visible');
-        });
+        header.classList.remove('scrolled');
       }
+      // Mobile CTA bar: show after scrolling past hero
+      if (heroSection && mobileBar) {
+        var heroBottom = heroSection.getBoundingClientRect().bottom;
+        if (heroBottom < 0) {
+          mobileBar.classList.add('visible');
+        } else {
+          mobileBar.classList.remove('visible');
+        }
+      }
+    }
 
-    })();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Scroll-triggered animations
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            var delay = entry.target.dataset.delay || 0;
+            setTimeout(function() {
+              entry.target.classList.add('animate-in');
+            }, parseInt(delay));
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      document.querySelectorAll('.benefit-card, .testimonial-card, .pricing-card, .timeline-step, .result-item').forEach(function(el, i) {
+        // Stagger animation within groups
+        var siblings = el.parentElement.children;
+        var index = Array.prototype.indexOf.call(siblings, el);
+        el.dataset.delay = index * 100;
+        observer.observe(el);
+      });
+    } else {
+      // If no IntersectionObserver or reduced motion, show immediately
+      document.querySelectorAll('.benefit-card, .testimonial-card, .pricing-card, .timeline-step, .result-item').forEach(function(el) {
+        el.classList.add('animate-in');
+      });
+    }
   </script>
-
 </body>
 </html>
